@@ -6,6 +6,7 @@
   "type": "module",
   "main": "react.production.min.js",
   "scripts": {
+    "build": "echo \"No build command installed\"",
     "eik:login": "eik login",
     "eik:publish": "eik publish",
     "eik:alias": "eik npm-alias"
