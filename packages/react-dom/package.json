@@ -1,0 +1,31 @@
+{
+  "name": "test-react-dom",
+  "private": "true",
+  "version": "16.14.0",
+  "description": "An ESM version of React Dom for Finn",
+  "type": "module",
+  "scripts": {
+    "build": "npx rollup -c",
+    "eik:login": "eik login",
+    "eik:publish": "eik publish",
+    "eik:alias": "eik npm-alias",
+    "postinstall": "npm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@eik/cli": "^2.0.13",
+    "@eik/rollup-plugin": "^4.0.9",
+    "@esm-bundle/react-dom": "16.14.0",
+    "rollup": "^2.59.0"
+  },
+  "eik": {
+    "server": "https://assets.finn.no",
+    "type": "npm",
+    "files": {
+      "react-dom.production.min.js": "./dist/react-dom.production.min.js",
+      "react-dom.production.min.js.map": "./dist/react-dom.production.min.js.map"
+    }
+  }
+}

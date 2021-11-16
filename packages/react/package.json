@@ -1,0 +1,28 @@
+{
+  "name": "test-react",
+  "private": "true",
+  "version": "16.14.0",
+  "description": "An ESM version of React for Finn",
+  "type": "module",
+  "main": "react.production.min.js",
+  "scripts": {
+    "build": "echo \"No build command installed\"",
+    "eik:login": "eik login",
+    "eik:publish": "eik publish",
+    "eik:alias": "eik npm-alias"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@eik/cli": "^2.0.13",
+    "@esm-bundle/react": "16.14.0"
+  },
+  "eik": {
+    "server": "https://assets.finn.no",
+    "type": "npm",
+    "files": {
+      "react.production.min.js": "./node_modules/@esm-bundle/react/esm/react.production.min.js",
+      "react.production.min.js.map": "./node_modules/@esm-bundle/react/esm/react.production.min.js.map"
+    }
+  }
+}
