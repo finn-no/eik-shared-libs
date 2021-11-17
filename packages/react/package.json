@@ -21,8 +21,8 @@
     "server": "https://assets.finn.no",
     "type": "npm",
     "files": {
-      "react.production.min.js": "./node_modules/@esm-bundle/react/esm/react.production.min.js",
-      "react.production.min.js.map": "./node_modules/@esm-bundle/react/esm/react.production.min.js.map"
+      "react.production.min.js": "../../node_modules/@esm-bundle/react/esm/react.production.min.js",
+      "react.production.min.js.map": "../../node_modules/@esm-bundle/react/esm/react.production.min.js.map"
     }
   }
 }
