@@ -1,7 +1,7 @@
 {
   "name": "test-react-dom",
   "private": "true",
-  "version": "16.14.0",
+  "version": "0.0.0",
   "description": "An ESM version of React Dom for Finn",
   "type": "module",
   "scripts": {
@@ -9,15 +9,18 @@
     "eik:login": "eik login",
     "eik:publish": "eik publish",
     "eik:alias": "eik npm-alias",
-    "postinstall": "npm run build"
+    "postinstall": "npm run build",
+    "eik:publish:ci": "../../scripts/publish.js react-dom @esm-bundle/react-dom"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "dependencies": {
+    "@esm-bundle/react-dom": "16.14.0"
+  },
   "devDependencies": {
     "@eik/cli": "^2.0.13",
     "@eik/rollup-plugin": "^4.0.9",
-    "@esm-bundle/react-dom": "16.14.0",
     "rollup": "^2.59.0"
   },
   "eik": {
