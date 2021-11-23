@@ -16,7 +16,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@esm-bundle/react-dom": "16.14.0"
+    "@esm-bundle/react-dom": "17.0.1"
   },
   "devDependencies": {
     "@eik/cli": "2.0.16",
