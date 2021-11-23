@@ -13,6 +13,7 @@
   "workspaces": [
     "packages/react",
     "packages/react-dom",
-    "packages/trackjs"
+    "packages/trackjs",
+    "packages/vue"
   ]
 }
