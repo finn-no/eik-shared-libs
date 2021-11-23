@@ -17,6 +17,10 @@
           "major": {
             "automerge": false
           }
+        },
+        {
+          "groupName": "React packages",
+          "packageNames": ["@esm-bundle/react", "@esm-bundle/react-dom"]
         }
       ]
   }
