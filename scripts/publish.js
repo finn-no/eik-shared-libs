@@ -42,7 +42,7 @@ try {
 } catch (err) {
     if (err.message === `Package with name "${name}" and version "${version}" already exists on server`) {
         console.log(`  ==> ${err.message}`);
-        process.exit();
+        process.exit(0);
     }
     throw err;
 }
