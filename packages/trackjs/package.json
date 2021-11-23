@@ -1,5 +1,5 @@
 {
-    "name": "test-trackjs",
+    "name": "trackjs",
     "private": "true",
     "version": "0.0.0",
     "description": "An ESM version of TrackJS for Finn",
