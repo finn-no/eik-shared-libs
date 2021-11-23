@@ -19,8 +19,8 @@
           }
         },
         {
-          "groupName": "React packages",
-          "packageNames": ["@esm-bundle/react", "@esm-bundle/react-dom"]
+          "groupName": "React and TrackJS packages",
+          "packageNames": ["@esm-bundle/react", "@esm-bundle/react-dom", "trackjs"]
         }
       ]
   }
