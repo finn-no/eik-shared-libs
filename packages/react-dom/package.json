@@ -21,7 +21,7 @@
   "devDependencies": {
     "@eik/cli": "2.0.16",
     "@eik/rollup-plugin": "4.0.9",
-    "rollup": "2.60.0"
+    "rollup": "2.60.1"
   },
   "eik": {
     "server": "https://assets.finn.no",
