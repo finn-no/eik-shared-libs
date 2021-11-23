@@ -19,7 +19,7 @@
     "@esm-bundle/react-dom": "16.14.0"
   },
   "devDependencies": {
-    "@eik/cli": "2.0.14",
+    "@eik/cli": "2.0.16",
     "@eik/rollup-plugin": "4.0.9",
     "rollup": "2.60.0"
   },
