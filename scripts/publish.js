@@ -40,6 +40,9 @@ try {
         logger: console,
     });
 } catch (err) {
-    if (err.message === `Package with name "${name}" and version "${version}" already exists on server`) return;
+    if (err.message === `Package with name "${name}" and version "${version}" already exists on server`) {
+        console.log(`  ==> ${err.message}`);
+        process.exit();
+    }
     throw err;
 }
