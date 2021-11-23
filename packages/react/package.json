@@ -18,7 +18,7 @@
     "@esm-bundle/react": "16.14.0"
   },
   "devDependencies": {
-    "@eik/cli": "^2.0.13"
+    "@eik/cli": "2.0.14"
   },
   "eik": {
     "server": "https://assets.finn.no",

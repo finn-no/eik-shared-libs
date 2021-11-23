@@ -19,9 +19,9 @@
     "@esm-bundle/react-dom": "16.14.0"
   },
   "devDependencies": {
-    "@eik/cli": "^2.0.13",
-    "@eik/rollup-plugin": "^4.0.9",
-    "rollup": "^2.59.0"
+    "@eik/cli": "2.0.14",
+    "@eik/rollup-plugin": "4.0.9",
+    "rollup": "2.60.0"
   },
   "eik": {
     "server": "https://assets.finn.no",
