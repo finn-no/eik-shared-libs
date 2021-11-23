@@ -28,13 +28,18 @@ const token = await eik.login({
     logger: console,
 });
 
-await eik.publish({
-    cwd,
-    token,
-    server,
-    name,
-    type,
-    version,
-    files,
-    logger: console,
-});
+try {
+    await eik.publish({
+        cwd,
+        token,
+        server,
+        name,
+        type,
+        version,
+        files,
+        logger: console,
+    });
+} catch (err) {
+    if (err.message === `Package with name "${name}" and version "${version}" already exists on server`) return;
+    throw err;
+}
