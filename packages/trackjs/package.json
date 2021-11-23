@@ -15,7 +15,7 @@
     "author": "",
     "license": "ISC",
     "dependencies": {
-        "trackjs": "^3.10.1"
+        "trackjs": "3.10.1"
     },
     "devDependencies": {
         "@eik/cli": "2.0.16"
