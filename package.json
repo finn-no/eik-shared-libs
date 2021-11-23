@@ -12,6 +12,7 @@
   "license": "ISC",
   "workspaces": [
     "packages/react",
-    "packages/react-dom"
+    "packages/react-dom",
+    "packages/trackjs"
   ]
 }
