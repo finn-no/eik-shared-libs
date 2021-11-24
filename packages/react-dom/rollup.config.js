@@ -6,12 +6,12 @@ const { resolve } = createRequire(import.meta.url);
 const reactPkg = new URL("../react/package.json", import.meta.url);
 const reactDomPkg = new URL("./package.json", import.meta.url);
 
-const { name, main } = JSON.parse(fs.readFileSync(reactPkg.pathname, "utf8"));
-const { version } = JSON.parse(fs.readFileSync(reactDomPkg.pathname, "utf8"));
+const { name } = JSON.parse(fs.readFileSync(reactPkg.pathname, "utf8"));
+const { dependencies: { '@esm-bundle/react-dom': version } } = JSON.parse(fs.readFileSync(reactDomPkg.pathname, "utf8"));
 
 const importMap = {
   imports: {
-    react: `https://assets.finn.no/npm/${name}/${version}/${main}`,
+    react: `https://assets.finn.no/npm/${name}/${version}/react.production.min.js`,
   },
 };
 
