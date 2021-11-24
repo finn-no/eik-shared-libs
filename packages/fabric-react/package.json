@@ -1,0 +1,27 @@
+{
+  "name": "@fabric-ds/react",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "echo \"No build command installed\"",
+    "eik:login": "eik login",
+    "eik:publish": "eik publish",
+    "eik:alias": "eik npm-alias",
+    "eik:publish:ci": "../../scripts/publish.js fabric-react @fabric-ds/react"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/finn-no/eik-shared-libs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/finn-no/eik-shared-libs/issues"
+  },
+  "homepage": "https://github.com/finn-no/eik-shared-libs#readme",
+  "dependencies": {
+    "@fabric-ds/react": "0.0.10"
+  }
+}
