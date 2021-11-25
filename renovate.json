@@ -19,6 +19,10 @@
           }
         },
         {
+          "groupName": "Fabric packages",
+          "packageNames": ["@fabric-ds/react", "@fabric-ds/vue", "@fabric-ds/css", "@fabric-ds/elements"]
+        },
+        {
           "groupName": "React and TrackJS packages",
           "packageNames": ["@esm-bundle/react", "@esm-bundle/react-dom", "trackjs"]
         }
