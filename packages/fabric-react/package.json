@@ -23,5 +23,10 @@
   "homepage": "https://github.com/finn-no/eik-shared-libs#readme",
   "dependencies": {
     "@fabric-ds/react": "0.0.10"
+  },
+  "eik": {
+    "server": "https://assets.finn.no",
+    "type": "npm",
+    "files": "./node_modules/@fabric-ds/react/dist"
   }
 }
