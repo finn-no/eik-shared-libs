@@ -14,6 +14,7 @@
     "packages/react",
     "packages/react-dom",
     "packages/trackjs",
+    "packages/vue",
     "packages/fabric-css",
     "packages/fabric-elements",
     "packages/fabric-vue",
