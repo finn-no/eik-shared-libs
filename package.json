@@ -18,6 +18,7 @@
     "packages/fabric-css",
     "packages/fabric-elements",
     "packages/fabric-vue",
-    "packages/fabric-react"
+    "packages/fabric-react",
+    "packages/lit-element"
   ]
 }
