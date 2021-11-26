@@ -26,7 +26,7 @@
     "files": "../node_modules/vue/dist/*.js"
   },
   "dependencies": {
-    "vue": "3.2.22"
+    "vue": "3.2.23"
   },
   "devDependencies": {
     "@eik/cli": "2.0.16"
