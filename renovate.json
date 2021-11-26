@@ -25,6 +25,10 @@
         {
           "groupName": "React and TrackJS packages",
           "packageNames": ["@esm-bundle/react", "@esm-bundle/react-dom", "trackjs"]
+        },
+        {
+          "groupName": "Lit packages",
+          "packageNames": ["lit-html", "lit-element"]
         }
       ]
   }
