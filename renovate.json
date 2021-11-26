@@ -5,18 +5,12 @@
     "packageRules": [
         {
           "depTypeList": ["dependencies"],
-          "automerge": true,
-          "major": {
-            "automerge": false
-          }
+          "automerge": true
         },
         {
           "depTypeList": ["devDependencies"],
           "schedule": ["before 4am on monday"],
-          "automerge": true,
-          "major": {
-            "automerge": false
-          }
+          "automerge": true
         },
         {
           "groupName": "Fabric packages",
