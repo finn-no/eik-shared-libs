@@ -6,6 +6,7 @@
   "type": "module",
   "scripts": {
     "build": "npx rollup -c",
+    "copy": "echo \"No copy command installed\"",
     "eik:login": "eik login",
     "eik:publish": "eik publish",
     "eik:alias": "eik npm-alias",
@@ -19,16 +20,12 @@
     "@esm-bundle/react-dom": "17.0.1"
   },
   "devDependencies": {
-    "@eik/cli": "2.0.16",
     "@eik/rollup-plugin": "4.0.9",
     "rollup": "2.60.1"
   },
   "eik": {
     "server": "https://assets.finn.no",
     "type": "npm",
-    "files": {
-      "react-dom.production.min.js": "./dist/react-dom.production.min.js",
-      "react-dom.production.min.js.map": "./dist/react-dom.production.min.js.map"
-    }
+    "files": "dist"
   }
 }

@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "echo \"No build command installed\"",
+    "copy": "../../scripts/copy.js fabric-vue @fabric-ds/vue dist/eik/*",
     "eik:login": "eik login",
     "eik:publish": "eik publish",
     "eik:alias": "eik npm-alias",
@@ -27,6 +28,6 @@
   "eik": {
     "server": "https://assets.finn.no",
     "type": "npm",
-    "files": "./node_modules/@fabric-ds/vue/dist/eik"
+    "files": "dist"
   }
 }

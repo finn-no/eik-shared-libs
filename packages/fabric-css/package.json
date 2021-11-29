@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "echo \"No build command installed\"",
+    "copy": "../../scripts/copy.js fabric-css @fabric-ds/css dist/fabric.min.css",
     "eik:login": "eik login",
     "eik:publish": "eik publish",
     "eik:alias": "eik npm-alias",
@@ -24,7 +25,7 @@
   "eik": {
     "server": "https://assets.finn.no",
     "type": "npm",
-    "files": "./node_modules/@fabric-ds/css/dist"
+    "files": "dist"
   },
   "dependencies": {
     "@fabric-ds/css": "1.0.2"

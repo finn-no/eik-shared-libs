@@ -7,6 +7,7 @@
   "main": "react.production.min.js",
   "scripts": {
     "build": "echo \"No build command installed\"",
+    "copy": "../../scripts/copy.js react @esm-bundle/react esm/react.production.min.*",
     "eik:login": "eik login",
     "eik:publish": "eik publish",
     "eik:alias": "eik npm-alias",
@@ -17,15 +18,9 @@
   "dependencies": {
     "@esm-bundle/react": "17.0.1"
   },
-  "devDependencies": {
-    "@eik/cli": "2.0.16"
-  },
   "eik": {
     "server": "https://assets.finn.no",
     "type": "npm",
-    "files": {
-      "react.production.min.js": "../../node_modules/@esm-bundle/react/esm/react.production.min.js",
-      "react.production.min.js.map": "../../node_modules/@esm-bundle/react/esm/react.production.min.js.map"
-    }
+    "files": "dist"
   }
 }
