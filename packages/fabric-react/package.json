@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "echo \"No build command installed\"",
+    "copy": "../../scripts/copy.js fabric-react @fabric-ds/react dist/npm/*",
     "eik:login": "eik login",
     "eik:publish": "eik publish",
     "eik:alias": "eik npm-alias",
@@ -27,6 +28,6 @@
   "eik": {
     "server": "https://assets.finn.no",
     "type": "npm",
-    "files": "./node_modules/@fabric-ds/react/dist"
+    "files": "dist"
   }
 }

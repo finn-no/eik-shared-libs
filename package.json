@@ -22,5 +22,9 @@
     "packages/fabric-react",
     "packages/lit-element",
     "packages/lit-html"
-  ]
+  ],
+  "devDependencies": {
+    "@eik/cli": "2.0.16",
+    "findup-sync": "5.0.0"
+  }
 }

@@ -4,6 +4,7 @@
   "main": "index.js",
   "scripts": {
     "build": "npx rollup -c",
+    "copy": "echo \"No copy command installed\"",
     "eik:login": "eik login",
     "eik:publish": "eik publish",
     "eik:alias": "eik npm-alias",
@@ -25,7 +26,6 @@
     "lit-html": "2.0.2"
   },
   "devDependencies": {
-    "@eik/cli": "2.0.16",
     "@eik/rollup-plugin": "4.0.9",
     "@rollup/plugin-commonjs": "21.0.1",
     "@rollup/plugin-node-resolve": "13.0.6",
@@ -35,6 +35,6 @@
   "eik": {
     "server": "https://assets.finn.no",
     "type": "npm",
-    "files": "./dist"
+    "files": "dist"
   }
 }
