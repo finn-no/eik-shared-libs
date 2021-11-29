@@ -23,7 +23,7 @@
   "eik": {
     "server": "https://assets.finn.no",
     "type": "npm",
-    "files": "../node_modules/vue/dist/*.js"
+    "files": "./node_modules/vue/dist/*.js"
   },
   "dependencies": {
     "vue": "3.2.23"
