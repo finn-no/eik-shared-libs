@@ -21,12 +21,12 @@ jobs:
           npm install
       - name: Run Build
         run: |
-          npm run build
+          npm run build -ws
       - name: Run Copy
         run: |
-          npm run copy
+          npm run copy -ws
       - name: Run Publish
         run: |
-          npm run eik:publish:ci
+          npm run eik:publish:ci -ws
         env:
           EIK_TOKEN: ${{ secrets.EIK_TOKEN }}
