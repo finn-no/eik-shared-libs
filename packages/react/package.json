@@ -16,7 +16,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@esm-bundle/react": "16.14.0"
+    "@esm-bundle/react": "17.0.1"
   },
   "eik": {
     "server": "https://assets.finn.no",
