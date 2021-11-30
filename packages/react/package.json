@@ -1,5 +1,5 @@
 {
-  "name": "test2-react",
+  "name": "react",
   "private": "true",
   "version": "0.0.0",
   "description": "An ESM version of React for Finn",
@@ -16,7 +16,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@esm-bundle/react": "17.0.1"
+    "@esm-bundle/react": "16.14.0"
   },
   "eik": {
     "server": "https://assets.finn.no",
