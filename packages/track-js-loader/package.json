@@ -1,0 +1,30 @@
+{
+    "name": "track-js-loader",
+    "private": "true",
+    "version": "0.0.0",
+    "description": "An configured TrackJS loader for Finn",
+    "type": "module",
+    "main": "autoloader.esm.js",
+    "scripts": {
+        "build": "echo \"No build command installed\"",
+        "copy": "../../scripts/copy.js track-js-loader @finn-no/track-js-loader dist/*.js",
+        "eik:login": "eik login",
+        "eik:publish": "eik publish",
+        "eik:alias": "eik npm-alias",
+        "eik:publish:ci": "../../scripts/publish.js track-js-loader @finn-no/track-js-loader"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@finn-no/track-js-loader": "4.0.0"
+    },
+    "eik": {
+        "server": "https://assets.finn.no",
+        "type": "npm",
+        "files": {
+            "main.esm.js": "./dist/main.esm.js",
+            "main.js": "./dist/main.js",
+            "autoloader.esm.js": "./dist/autoloader.esm.js" 
+        }
+    }
+}
