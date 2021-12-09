@@ -1,6 +1,7 @@
 import fs from "fs";
 import plugin from "@eik/rollup-plugin";
 import { createRequire } from "module";
+import semver from 'semver';
 
 const { resolve } = createRequire(import.meta.url);
 const reactPkg = new URL("../react/package.json", import.meta.url);
@@ -11,7 +12,7 @@ const { dependencies: { '@esm-bundle/react-dom': version } } = JSON.parse(fs.rea
 
 const importMap = {
   imports: {
-    react: `https://assets.finn.no/npm/${name}/${version}/react.production.min.js`,
+    react: `https://assets.finn.no/npm/${name}/v${semver.major(version)}/react.production.min.js`,
   },
 };
 
