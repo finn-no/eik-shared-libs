@@ -20,7 +20,7 @@
     "packages/lit-html"
   ],
   "devDependencies": {
-    "@eik/cli": "2.0.18",
+    "@eik/cli": "2.0.20",
     "findup-sync": "5.0.0"
   }
 }
