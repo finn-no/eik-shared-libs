@@ -17,7 +17,8 @@
     "packages/vue",
     "packages/vue-next",
     "packages/lit-element",
-    "packages/lit-html"
+    "packages/lit-html",
+    "packages/podium-browser"
   ],
   "devDependencies": {
     "@eik/cli": "2.0.20",
