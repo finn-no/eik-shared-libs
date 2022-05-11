@@ -20,7 +20,7 @@
     "@esm-bundle/react-dom": "17.0.1"
   },
   "devDependencies": {
-    "@eik/rollup-plugin": "4.0.9",
+    "@eik/rollup-plugin": "4.0.10",
     "rollup": "2.63.0",
     "semver": "7.3.5"
   },
