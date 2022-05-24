@@ -11,7 +11,8 @@
     "eik:login": "eik login",
     "eik:publish": "eik publish",
     "eik:alias": "eik npm-alias",
-    "eik:publish:ci": "../../scripts/publish.js react react"
+    "eik:publish:ci": "../../scripts/publish.js react react",
+    "postinstall": "npm run build"
   },
   "author": "",
   "license": "ISC",
