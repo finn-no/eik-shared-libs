@@ -1,6 +1,7 @@
 import { nodeResolve } from "@rollup/plugin-node-resolve";
 import { terser } from "rollup-plugin-terser";
 import commonjs from "@rollup/plugin-commonjs";
+import replace from "@rollup/plugin-replace";
 
 export default [
   {
@@ -15,6 +16,12 @@ export default [
       commonjs({
         include: /node_modules/,
       }),
+      replace({
+        preventAssignment: true,
+        values: {
+          "process.env.NODE_ENV": JSON.stringify('development'),
+        },
+      }),
     ],
   },
   {
@@ -28,6 +35,12 @@ export default [
       nodeResolve(),
       commonjs({
         include: /node_modules/,
+      }),
+      replace({
+        preventAssignment: true,
+        values: {
+          "process.env.NODE_ENV": JSON.stringify('production'),
+        },
       }),
       terser({
         format: {

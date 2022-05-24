@@ -4,6 +4,7 @@ import semver from "semver";
 import { nodeResolve } from "@rollup/plugin-node-resolve";
 import { terser } from "rollup-plugin-terser";
 import commonjs from "@rollup/plugin-commonjs";
+import replace from "@rollup/plugin-replace";
 
 const reactPkg = new URL("../react/package.json", import.meta.url);
 const reactDomPkg = new URL("./package.json", import.meta.url);
@@ -37,6 +38,12 @@ export default [
       commonjs({
         include: /node_modules/,
       }),
+      replace({
+        preventAssignment: true,
+        values: {
+          "process.env.NODE_ENV": JSON.stringify('development'),
+        },
+      }),
     ],
   },
   {
@@ -61,6 +68,12 @@ export default [
       nodeResolve(),
       commonjs({
         include: /node_modules/,
+      }),
+      replace({
+        preventAssignment: true,
+        values: {
+          "process.env.NODE_ENV": JSON.stringify('development'),
+        },
       }),
       terser({
         format: {
