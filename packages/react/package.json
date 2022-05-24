@@ -6,17 +6,24 @@
   "type": "module",
   "main": "react.production.min.js",
   "scripts": {
-    "build": "echo \"No build command installed\"",
-    "copy": "../../scripts/copy.js react @esm-bundle/react esm/react.production.min.*",
+    "build": "npx rollup -c",
+    "copy": "echo \"No copy command installed\"",
     "eik:login": "eik login",
     "eik:publish": "eik publish",
     "eik:alias": "eik npm-alias",
-    "eik:publish:ci": "../../scripts/publish.js react @esm-bundle/react"
+    "eik:publish:ci": "../../scripts/publish.js react react",
+    "postinstall": "npm run build"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@esm-bundle/react": "17.0.1"
+    "react": "18.0.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "21.0.1",
+    "@rollup/plugin-node-resolve": "13.1.2",
+    "rollup": "2.63.0",
+    "rollup-plugin-terser": "7.0.2"
   },
   "eik": {
     "server": "https://assets.finn.no",

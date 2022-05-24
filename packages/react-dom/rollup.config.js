@@ -1,27 +1,72 @@
 import fs from "fs";
 import plugin from "@eik/rollup-plugin";
-import { createRequire } from "module";
-import semver from 'semver';
+import semver from "semver";
+import { nodeResolve } from "@rollup/plugin-node-resolve";
+import { terser } from "rollup-plugin-terser";
+import commonjs from "@rollup/plugin-commonjs";
 
-const { resolve } = createRequire(import.meta.url);
 const reactPkg = new URL("../react/package.json", import.meta.url);
 const reactDomPkg = new URL("./package.json", import.meta.url);
 
 const { name } = JSON.parse(fs.readFileSync(reactPkg.pathname, "utf8"));
-const { dependencies: { '@esm-bundle/react-dom': version } } = JSON.parse(fs.readFileSync(reactDomPkg.pathname, "utf8"));
+const {
+  dependencies: { "react-dom": version },
+} = JSON.parse(fs.readFileSync(reactDomPkg.pathname, "utf8"));
 
-const importMap = {
-  imports: {
-    react: `https://assets.finn.no/npm/${name}/v${semver.major(version)}/react.production.min.js`,
+export default [
+  {
+    input: "./react-dom.development.js",
+    output: {
+      format: "esm",
+      sourcemap: true,
+      file: `./dist/react-dom.development.js`,
+    },
+    plugins: [
+      plugin({
+        maps: [
+          {
+            imports: {
+              react: `https://assets.finn.no/npm/${name}/v${semver.major(
+                version
+              )}/react.development.js`,
+            },
+          },
+        ],
+      }),
+      nodeResolve(),
+      commonjs({
+        include: /node_modules/,
+      }),
+    ],
   },
-};
-
-export default {
-  input: resolve("@esm-bundle/react-dom/esm/react-dom.production.min.js"),
-  output: {
-    format: "esm",
-    sourcemap: true,
-    file: `./dist/react-dom.production.min.js`,
+  {
+    input: "./react-dom.production.min.js",
+    output: {
+      format: "esm",
+      sourcemap: true,
+      file: `./dist/react-dom.production.min.js`,
+    },
+    plugins: [
+      plugin({
+        maps: [
+          {
+            imports: {
+              react: `https://assets.finn.no/npm/${name}/v${semver.major(
+                version
+              )}/react.production.min.js`,
+            },
+          },
+        ],
+      }),
+      nodeResolve(),
+      commonjs({
+        include: /node_modules/,
+      }),
+      terser({
+        format: {
+          comments: false,
+        },
+      }),
+    ],
   },
-  plugins: [plugin({ maps: [importMap] })],
-};
+];
