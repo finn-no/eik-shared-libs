@@ -13,14 +13,6 @@ const {
   dependencies: { "react-dom": version },
 } = JSON.parse(fs.readFileSync(reactDomPkg.pathname, "utf8"));
 
-const importMap = {
-  imports: {
-    react: `https://assets.finn.no/npm/${name}/v${semver.major(
-      version
-    )}/react.production.min.js`,
-  },
-};
-
 export default [
   {
     input: "./react-dom.development.js",
