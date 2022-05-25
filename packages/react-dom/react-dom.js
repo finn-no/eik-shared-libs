@@ -1,4 +1,4 @@
-import ReactDOM from "react-dom/cjs/react-dom.production.min.js";
+import ReactDOM from "react-dom";
 
 export default ReactDOM;
 export const {
