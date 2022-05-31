@@ -1,0 +1,40 @@
+{
+  "name": "lit",
+  "version": "0.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx rollup -c",
+    "copy": "echo \"No copy command installed\"",
+    "eik:login": "eik login",
+    "eik:publish": "eik publish",
+    "eik:alias": "eik npm-alias",
+    "eik:publish:ci": "../../scripts/publish.js lit lit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/finn-no/eik-shared-libs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/finn-no/eik-shared-libs/issues"
+  },
+  "homepage": "https://github.com/finn-no/eik-shared-libs#readme",
+  "description": "",
+  "dependencies": {
+    "lit": "2.2.5"
+  },
+  "devDependencies": {
+    "@eik/rollup-plugin": "4.0.9",
+    "@rollup/plugin-commonjs": "21.0.1",
+    "@rollup/plugin-node-resolve": "13.1.2",
+    "rollup": "2.63.0",
+    "rollup-plugin-terser": "7.0.2"
+  },
+  "eik": {
+    "server": "https://assets.finn.no",
+    "type": "npm",
+    "files": "dist"
+  }
+}
