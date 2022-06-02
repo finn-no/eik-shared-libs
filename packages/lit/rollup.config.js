@@ -1,12 +1,9 @@
-import { createRequire } from "module";
 import { nodeResolve } from '@rollup/plugin-node-resolve';
 import { terser } from 'rollup-plugin-terser';
 import commonjs from '@rollup/plugin-commonjs';
 
-const { resolve } = createRequire(import.meta.url);
-
 export default {
-  input: resolve("lit"),
+  input: './index.js',
   output: {
     format: "esm",
     sourcemap: true,
