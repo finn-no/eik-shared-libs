@@ -21,7 +21,7 @@ const plugins = [
     maps: [
       {
         imports: {
-          react: `https://assets.finn.no/npm/${name}/v${semver.major(version)}/react.${env}.js`,
+          react: `https://assets.finn.no/npm/${name}/v${semver.major(version)}/react.${env}.min.js`,
         },
       },
     ],
