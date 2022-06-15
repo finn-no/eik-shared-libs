@@ -22,7 +22,7 @@
     "packages/podium-browser"
   ],
   "devDependencies": {
-    "@eik/cli": "2.0.20",
+    "@eik/cli": "2.0.22",
     "findup-sync": "5.0.0"
   }
 }
