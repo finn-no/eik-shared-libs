@@ -23,7 +23,7 @@
   "homepage": "https://github.com/finn-no/eik-shared-libs#readme",
   "description": "",
   "dependencies": {
-    "lit": "2.2.5"
+    "lit": "2.2.6"
   },
   "devDependencies": {
     "@eik/rollup-plugin": "4.0.9",
