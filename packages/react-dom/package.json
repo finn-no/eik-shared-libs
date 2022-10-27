@@ -22,7 +22,7 @@
     "react-dom": "18.0.0"
   },
   "devDependencies": {
-    "@eik/rollup-plugin": "4.0.9",
+    "@eik/rollup-plugin": "4.0.34",
     "@rollup/plugin-commonjs": "21.1.0",
     "@rollup/plugin-node-resolve": "13.1.2",
     "@rollup/plugin-replace": "^4.0.0",
