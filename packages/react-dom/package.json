@@ -23,7 +23,7 @@
   },
   "devDependencies": {
     "@eik/rollup-plugin": "4.0.9",
-    "@rollup/plugin-commonjs": "21.0.1",
+    "@rollup/plugin-commonjs": "21.1.0",
     "@rollup/plugin-node-resolve": "13.1.2",
     "@rollup/plugin-replace": "^4.0.0",
     "rollup": "2.63.0",
