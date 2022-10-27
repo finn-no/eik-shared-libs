@@ -1,28 +1,21 @@
 {
-    "extends": [
-      "config:base"
-    ],
-    "packageRules": [
-        {
-          "depTypeList": ["dependencies"],
-          "automerge": true
-        },
-        {
-          "depTypeList": ["devDependencies"],
-          "schedule": ["before 4am on monday"],
-          "automerge": true
-        },
-        {
-          "groupName": "Fabric packages",
-          "packageNames": ["@fabric-ds/react", "@fabric-ds/vue", "@fabric-ds/css", "@fabric-ds/elements"]
-        },
-        {
-          "groupName": "React and TrackJS packages",
-          "packageNames": ["@esm-bundle/react", "@esm-bundle/react-dom", "trackjs"]
-        },
-        {
-          "groupName": "Lit packages",
-          "packageNames": ["lit-html", "lit-element"]
-        }
-      ]
-  }
+  "dependencyDashboard": true,
+  "packageRules": [
+    {
+      "groupName": "Dev Dependencies",
+      "matchDepTypes": ["devDependencies"],
+      "schedule": ["before 6am on the first day of the month"],
+      "rangeStrategy": "pin",
+      "automerge": true
+    },
+    {
+      "groupName": "Dependencies",
+      "schedule": ["after 6pm every weekday", "before 6am every weekday", "every weekend"],
+      "rangeStrategy": "pin",
+      "automerge": true,
+      "major": {
+        "automerge": false
+      }
+    }
+  ]
+}
