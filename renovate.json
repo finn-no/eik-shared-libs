@@ -10,12 +10,10 @@
     },
     {
       "groupName": "Dependencies",
+      "matchDepTypes": ["dependencies"],
       "schedule": ["after 6pm every weekday", "before 6am every weekday", "every weekend"],
       "rangeStrategy": "pin",
-      "automerge": true,
-      "major": {
-        "automerge": false
-      }
+      "automerge": true
     }
   ]
 }
