@@ -24,7 +24,7 @@
   "homepage": "https://github.com/finn-no/eik-shared-libs#readme",
   "description": "",
   "dependencies": {
-    "lit-element": "3.0.2"
+    "lit-element": "3.2.2"
   },
   "devDependencies": {
     "esbuild": "0.15.12"
