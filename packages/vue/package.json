@@ -27,6 +27,6 @@
     "files": "dist"
   },
   "dependencies": {
-    "vue": "2.7.13"
+    "vue": "3.2.41"
   }
 }
