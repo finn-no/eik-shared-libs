@@ -19,7 +19,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "react-dom": "18.0.0"
+    "react-dom": "18.2.0"
   },
   "devDependencies": {
     "@eik/rollup-plugin": "4.0.34",
