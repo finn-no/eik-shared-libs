@@ -11,6 +11,8 @@
   "author": "",
   "license": "ISC",
   "workspaces": [
+    "packages/react-17",
+    "packages/react-dom-17",
     "packages/react-18",
     "packages/react-dom-18",
     "packages/trackjs",
