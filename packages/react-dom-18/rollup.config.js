@@ -8,7 +8,7 @@ import replace from "@rollup/plugin-replace";
 
 const env = process.env.NODE_ENV;
 
-const reactPkg = new URL("../react/package.json", import.meta.url);
+const reactPkg = new URL("../react-18/package.json", import.meta.url);
 const reactDomPkg = new URL("./package.json", import.meta.url);
 
 const { name } = JSON.parse(fs.readFileSync(reactPkg.pathname, "utf8"));
