@@ -11,8 +11,10 @@
   "author": "",
   "license": "ISC",
   "workspaces": [
-    "packages/react",
-    "packages/react-dom",
+    "packages/react-17",
+    "packages/react-dom-17",
+    "packages/react-18",
+    "packages/react-dom-18",
     "packages/trackjs",
     "packages/vue",
     "packages/lit",
@@ -22,6 +24,7 @@
   ],
   "devDependencies": {
     "@eik/cli": "2.0.22",
-    "findup-sync": "5.0.0"
+    "findup-sync": "5.0.0",
+    "semver": "7.3.8"
   }
 }

@@ -1,0 +1,27 @@
+{
+  "name": "react-17",
+  "private": "true",
+  "version": "0.0.0",
+  "description": "An ESM version of React for Finn",
+  "type": "module",
+  "main": "react.production.min.js",
+  "scripts": {
+    "build": "echo \"No build command installed\"",
+    "copy": "../../scripts/copy.js react-17 @esm-bundle/react esm/react.production.min.*",
+    "eik:login": "eik login",
+    "eik:publish": "eik publish",
+    "eik:alias": "eik npm-alias",
+    "eik:publish:ci": "../../scripts/publish.js react-17 @esm-bundle/react stripPrerelease"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@esm-bundle/react": "17.0.2-fix.1"
+  },
+  "eik": {
+    "name": "react",
+    "server": "https://assets.finn.no",
+    "type": "npm",
+    "files": "dist"
+  }
+}

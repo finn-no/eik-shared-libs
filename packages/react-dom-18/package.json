@@ -13,7 +13,7 @@
     "eik:publish": "eik publish",
     "eik:alias": "eik npm-alias",
     "postinstall": "npm run build",
-    "eik:publish:ci": "../../scripts/publish.js react-dom react-dom"
+    "eik:publish:ci": "../../scripts/publish.js react-dom-18 react-dom"
   },
   "keywords": [],
   "author": "",
@@ -27,7 +27,7 @@
     "@rollup/plugin-node-resolve": "15.0.1",
     "@rollup/plugin-replace": "5.0.1",
     "@rollup/plugin-terser": "0.1.0",
-    "rollup": "3.2.4",
+    "rollup": "3.2.5",
     "semver": "7.3.8"
   },
   "eik": {

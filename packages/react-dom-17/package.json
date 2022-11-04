@@ -1,0 +1,33 @@
+{
+  "name": "react-dom-17",
+  "private": "true",
+  "version": "0.0.0",
+  "description": "An ESM version of React Dom for Finn",
+  "type": "module",
+  "scripts": {
+    "build": "npx rollup -c",
+    "copy": "echo \"No copy command installed\"",
+    "eik:login": "eik login",
+    "eik:publish": "eik publish",
+    "eik:alias": "eik npm-alias",
+    "postinstall": "npm run build",
+    "eik:publish:ci": "../../scripts/publish.js react-dom-17 @esm-bundle/react-dom stripPrerelease"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@esm-bundle/react-dom": "17.0.2-fix.0"
+  },
+  "devDependencies": {
+    "@eik/rollup-plugin": "4.0.36",
+    "rollup": "3.2.5",
+    "semver": "7.3.8"
+  },
+  "eik": {
+    "name": "react-dom",
+    "server": "https://assets.finn.no",
+    "type": "npm",
+    "files": "dist"
+  }
+}
