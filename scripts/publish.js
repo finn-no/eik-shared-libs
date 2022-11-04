@@ -5,8 +5,9 @@ import { join } from 'path';
 import eik from '@eik/cli';
 import semver from 'semver';
 
-// usage: EIK_TOKEN=<eik token> ./publish.js <name of package folder> <name of dependency>
+// usage: EIK_TOKEN=<eik token> ./publish.js <name of package folder> <name of dependency> <stripPrerelease>
 // example: EIK_TOKEN=<eik token> ./publish.js react @esm-bundle/react
+// example: EIK_TOKEN=<eik token> ./publish.js react @esm-bundle/react stripPrerelease
 
 const { EIK_TOKEN } = process.env;
 const dirname = new URL('./', import.meta.url).pathname;
