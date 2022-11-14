@@ -4,17 +4,5 @@
     ":automergeAll",
     ":pinVersions",
     ":separatePatchReleases"
-  ],
-  "packageRules": [
-    {
-      "groupName": "Dev Dependencies",
-      "matchDepTypes": ["devDependencies"],
-      "schedule": ["before 6am on the first day of the month"]
-    },
-    {
-      "groupName": "Dependencies",
-      "matchDepTypes": ["dependencies"],
-      "schedule": ["after 6pm every weekday", "before 6am every weekday", "every weekend"]
-    }
   ]
 }
