@@ -1,11 +1,12 @@
 {
   "extends": [
-    "config:base",
+    ":dependencyDashboard",
     ":automergeAll",
     ":pinVersions",
     ":separatePatchReleases",
     ":respectLatest",
     ":npm",
-    ":onlyNpm"
+    ":onlyNpm",
+    "schedule:nonOfficeHours"
   ]
 }
