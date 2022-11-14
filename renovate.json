@@ -3,6 +3,9 @@
     "config:base",
     ":automergeAll",
     ":pinVersions",
-    ":separatePatchReleases"
+    ":separatePatchReleases",
+    ":respectLatest",
+    ":npm",
+    ":onlyNpm"
   ]
 }
