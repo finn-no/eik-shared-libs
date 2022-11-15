@@ -27,7 +27,7 @@
     "lit-html": "2.4.0"
   },
   "devDependencies": {
-    "esbuild": "0.15.13"
+    "esbuild": "0.15.14"
   },
   "eik": {
     "server": "https://assets.finn.no",
