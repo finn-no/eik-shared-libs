@@ -1,9 +1,10 @@
 {
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "enabledManagers": ["npm", "github-actions"],
   "dependencyDashboard": true,
   "packageRules": [
     {
-      "matchDepTypes": ["dependencies"],
+      "depTypeList": ["dependencies"],
       "schedule": [
         "after 6pm every weekday",
         "before 6am every weekday"
@@ -13,6 +14,27 @@
       "major": {
         "automerge": false
       }
+    },
+    {
+      "depTypeList": ["devDependencies"],
+      "schedule": ["every weekend"],
+      "rangeStrategy": "pin",
+      "automerge": true,
+      "major": {
+        "automerge": false
+      }
+    },
+    {
+      "groupName": "All dependencies (non-major)",
+      "matchDepTypes": ["dependencies"],
+      "matchUpdateTypes": ["patch", "minor"]
+    },
+    {
+      "groupName": "Build packages",
+      "matchDepTypes": ["devDependencies"],
+      "matchPackagePatterns": [
+        "esbuild"
+      ]
     }
   ]
 }
