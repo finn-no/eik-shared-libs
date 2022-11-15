@@ -28,7 +28,7 @@
     "files": "dist"
   },
   "dependencies": {
-    "vue": "3.2.41"
+    "vue": "3.2.45"
   },
   "devDependencies": {
     "esbuild": "0.15.12"
