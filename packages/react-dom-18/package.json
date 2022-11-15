@@ -1,6 +1,5 @@
 {
-  "name": "react-dom",
-  "private": "true",
+  "name": "@finn-no/react-dom",
   "version": "0.0.0",
   "description": "An ESM version of React Dom for Finn",
   "type": "module",
@@ -8,16 +7,12 @@
     "build:dev": "NODE_ENV=development npx rollup -c",
     "build:prod": "NODE_ENV=production npx rollup -c",
     "build": "npm run build:dev && npm run build:prod",
-    "copy": "echo \"No copy command installed\"",
     "eik:login": "eik login",
     "eik:publish": "eik publish",
     "eik:alias": "eik npm-alias",
     "postinstall": "npm run build",
     "eik:publish:ci": "../../scripts/publish.js react-dom-18 react-dom"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "react-dom": "18.2.0"
   },
@@ -31,6 +26,7 @@
     "semver": "7.3.8"
   },
   "eik": {
+    "name": "react-dom",
     "server": "https://assets.finn.no",
     "type": "npm",
     "files": "dist"

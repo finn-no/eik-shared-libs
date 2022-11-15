@@ -1,28 +1,15 @@
 {
-  "name": "lit-element",
+  "name": "@finn-no/lit-element",
   "version": "0.0.0",
-  "main": "index.js",
+  "description": "An ESM version of Lit Element for Finn",
   "type": "module",
   "scripts": {
     "build": "node ./esbuild.js",
-    "copy": "echo \"No copy command installed\"",
     "eik:login": "eik login",
     "eik:publish": "eik publish",
     "eik:alias": "eik npm-alias",
     "eik:publish:ci": "../../scripts/publish.js lit-element lit-element"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/finn-no/eik-shared-libs.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/finn-no/eik-shared-libs/issues"
-  },
-  "homepage": "https://github.com/finn-no/eik-shared-libs#readme",
-  "description": "",
   "dependencies": {
     "lit-element": "3.2.2"
   },
@@ -30,6 +17,7 @@
     "esbuild": "0.15.14"
   },
   "eik": {
+    "name": "lit-element",
     "server": "https://assets.finn.no",
     "type": "npm",
     "files": "dist"

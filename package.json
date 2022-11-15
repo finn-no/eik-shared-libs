@@ -1,15 +1,9 @@
 {
-  "name": "frontend-libraries",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "@finn-no/frontend-libraries",
+  "version": "0.0.0",
+  "description": "Shared frontend libraries at FINN",
   "type": "module",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "workspaces": [
     "packages/react-17",
     "packages/react-dom-17",
