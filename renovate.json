@@ -1,5 +1,5 @@
 {
-  "enabledManagers": ["npm"],
+  "enabledManagers": ["npm", "github-actions"],
   "dependencyDashboard": true,
   "packageRules": [
     {
