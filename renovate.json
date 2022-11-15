@@ -13,15 +13,6 @@
       "major": {
         "automerge": false
       }
-    },
-    {
-      "matchDepTypes": ["devDependencies"],
-      "schedule": ["every weekend"],
-      "rangeStrategy": "pin",
-      "automerge": true,
-      "major": {
-        "automerge": false
-      }
     }
   ]
 }
