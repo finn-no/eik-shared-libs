@@ -1,5 +1,5 @@
 {
-  "name": "vue",
+  "name": "vue-lib",
   "version": "0.0.0",
   "private": "true",
   "description": "An ESM version of Vue for Finn",
@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/finn-no/eik-shared-libs#readme",
   "eik": {
+    "name": "vue",
     "server": "https://assets.finn.no",
     "type": "npm",
     "files": "dist"
