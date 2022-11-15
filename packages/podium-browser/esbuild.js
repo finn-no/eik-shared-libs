@@ -1,7 +1,10 @@
+import { createRequire } from "node:module";
 import esbuild from "esbuild";
 
+const { resolve } = createRequire(import.meta.url);
+
 await esbuild.build({
-  entryPoints: ["./node_modules/@podium/browser/src/index.js"],
+  entryPoints: [resolve("@podium/browser")],
   bundle: true,
   minify: true,
   format: "esm",

@@ -11,7 +11,7 @@ const env = process.env.NODE_ENV;
 const reactPkg = new URL("../react-18/package.json", import.meta.url);
 const reactDomPkg = new URL("./package.json", import.meta.url);
 
-const { name } = JSON.parse(fs.readFileSync(reactPkg.pathname, "utf8"));
+const { eik: { name } } = JSON.parse(fs.readFileSync(reactPkg.pathname, "utf8"));
 const {
   dependencies: { "react-dom": version },
 } = JSON.parse(fs.readFileSync(reactDomPkg.pathname, "utf8"));
