@@ -4,6 +4,11 @@
   "description": "Shared frontend libraries at FINN",
   "type": "module",
   "license": "MIT",
+  "scripts": {
+    "build": "npm run build -ws",
+    "copy": "npm run copy -ws",
+    "publish": "npm run eik:publish:ci -ws"
+  },
   "workspaces": [
     "packages/react-17",
     "packages/react-dom-17",

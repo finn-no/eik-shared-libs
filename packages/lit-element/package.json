@@ -4,6 +4,7 @@
   "description": "An ESM version of Lit Element for Finn",
   "type": "module",
   "scripts": {
+    "copy": "echo 'noop';",
     "build": "node ./esbuild.js",
     "eik:login": "eik login",
     "eik:publish": "eik publish",

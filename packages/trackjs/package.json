@@ -6,6 +6,7 @@
     "type": "module",
     "scripts": {
         "copy": "../../scripts/copy.js trackjs trackjs index.esm.js",
+        "build": "echo 'noop';",
         "eik:login": "eik login",
         "eik:publish": "eik publish",
         "eik:alias": "eik npm-alias",

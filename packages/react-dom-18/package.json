@@ -4,6 +4,7 @@
   "description": "An ESM version of React Dom for Finn",
   "type": "module",
   "scripts": {
+    "copy": "echo 'noop';",
     "build:dev": "NODE_ENV=development npx rollup -c",
     "build:prod": "NODE_ENV=production npx rollup -c",
     "build": "npm run build:dev && npm run build:prod",

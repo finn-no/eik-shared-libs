@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "copy": "../../scripts/copy.js react-17 @esm-bundle/react esm/react.production.min.*",
+    "build": "echo 'noop';",
     "eik:login": "eik login",
     "eik:publish": "eik publish",
     "eik:alias": "eik npm-alias",
