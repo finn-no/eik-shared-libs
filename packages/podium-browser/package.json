@@ -19,7 +19,7 @@
         "@podium/browser": "1.2.1"
     },
     "devDependencies": {
-        "esbuild": "0.15.13"
+        "esbuild": "0.15.14"
     },
     "eik": {
         "server": "https://assets.finn.no",
