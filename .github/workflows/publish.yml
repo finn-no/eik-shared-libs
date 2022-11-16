@@ -15,18 +15,18 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 16.x
+          node-version: 18.x
       - name: Install Dependencies
         run: |
           npm install
       - name: Run Build
         run: |
-          npm run build -ws
+          npm run build
       - name: Run Copy
         run: |
-          npm run copy -ws
+          npm run copy
       - name: Run Publish
         run: |
-          npm run eik:publish:ci -ws
+          npm run publish
         env:
           EIK_TOKEN: ${{ secrets.EIK_TOKEN }}
