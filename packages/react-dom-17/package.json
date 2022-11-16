@@ -1,21 +1,17 @@
 {
-  "name": "react-dom-17",
-  "private": "true",
+  "name": "@finn-no/react-dom-17",
   "version": "0.0.0",
   "description": "An ESM version of React Dom for Finn",
   "type": "module",
   "scripts": {
+    "copy": "echo 'noop';",
     "build": "npx rollup -c",
-    "copy": "echo \"No copy command installed\"",
     "eik:login": "eik login",
     "eik:publish": "eik publish",
     "eik:alias": "eik npm-alias",
     "postinstall": "npm run build",
     "eik:publish:ci": "../../scripts/publish.js react-dom-17 @esm-bundle/react-dom stripPrerelease"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "@esm-bundle/react-dom": "17.0.2-fix.0"
   },

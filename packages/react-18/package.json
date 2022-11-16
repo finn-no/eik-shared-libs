@@ -1,21 +1,17 @@
 {
-  "name": "react",
-  "private": "true",
+  "name": "@finn-no/react",
   "version": "0.0.0",
   "description": "An ESM version of React for Finn",
   "type": "module",
-  "main": "react.production.min.js",
   "scripts": {
+    "copy": "echo 'noop';",
     "build": "npx rollup -c",
-    "copy": "echo \"No copy command installed\"",
     "eik:login": "eik login",
     "eik:publish": "eik publish",
     "eik:alias": "eik npm-alias",
     "eik:publish:ci": "../../scripts/publish.js react-18 react",
     "postinstall": "npm run build"
   },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "react": "18.2.0"
   },
@@ -28,6 +24,7 @@
     "rollup": "3.3.0"
   },
   "eik": {
+    "name": "react",
     "server": "https://assets.finn.no",
     "type": "npm",
     "files": "dist"

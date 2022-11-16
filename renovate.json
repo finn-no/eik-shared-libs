@@ -4,7 +4,7 @@
   "dependencyDashboard": true,
   "packageRules": [
     {
-      "depTypeList": ["dependencies"],
+      "matchDepTypes": ["dependencies"],
       "schedule": [
         "after 6pm every weekday",
         "before 6am every weekday"
@@ -16,25 +16,13 @@
       }
     },
     {
-      "depTypeList": ["devDependencies"],
+      "matchDepTypes": ["devDependencies"],
       "schedule": ["every weekend"],
       "rangeStrategy": "pin",
       "automerge": true,
       "major": {
         "automerge": false
       }
-    },
-    {
-      "groupName": "All dependencies (non-major)",
-      "matchDepTypes": ["dependencies"],
-      "matchUpdateTypes": ["patch", "minor"]
-    },
-    {
-      "groupName": "Build packages",
-      "matchDepTypes": ["devDependencies"],
-      "matchPackagePatterns": [
-        "esbuild"
-      ]
     }
   ]
 }

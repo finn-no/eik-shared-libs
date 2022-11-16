@@ -1,24 +1,22 @@
 {
-    "name": "trackjs",
+    "name": "@finn-no/trackjs",
     "private": "true",
     "version": "0.0.0",
     "description": "An ESM version of TrackJS for Finn",
     "type": "module",
-    "main": "trackjs.production.min.js",
     "scripts": {
-        "build": "echo \"No build command installed\"",
         "copy": "../../scripts/copy.js trackjs trackjs index.esm.js",
+        "build": "echo 'noop';",
         "eik:login": "eik login",
         "eik:publish": "eik publish",
         "eik:alias": "eik npm-alias",
         "eik:publish:ci": "../../scripts/publish.js trackjs trackjs"
     },
-    "author": "",
-    "license": "ISC",
     "dependencies": {
         "trackjs": "3.10.1"
     },
     "eik": {
+        "name": "trackjs",
         "server": "https://assets.finn.no",
         "type": "npm",
         "files": {

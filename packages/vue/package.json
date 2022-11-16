@@ -1,36 +1,23 @@
 {
-  "name": "vue-lib",
+  "name": "@finn-no/vue",
   "version": "0.0.0",
-  "private": "true",
   "description": "An ESM version of Vue for Finn",
-  "main": "index.js",
+  "type": "module",
   "scripts": {
     "copy": "../../scripts/copy.js vue vue dist/*.js",
+    "build": "echo 'noop';",
     "eik:login": "eik login",
     "eik:publish": "eik publish",
     "eik:alias": "eik npm-alias",
     "eik:publish:ci": "../../scripts/publish.js vue vue"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/finn-no/eik-shared-libs.git"
+  "dependencies": {
+    "vue": "3.2.41"
   },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/finn-no/eik-shared-libs/issues"
-  },
-  "homepage": "https://github.com/finn-no/eik-shared-libs#readme",
   "eik": {
     "name": "vue",
     "server": "https://assets.finn.no",
     "type": "npm",
     "files": "dist"
-  },
-  "dependencies": {
-    "vue": "3.2.41"
-  },
-  "devDependencies": {
-    "esbuild": "0.15.12"
   }
 }

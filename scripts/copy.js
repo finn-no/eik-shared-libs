@@ -23,7 +23,7 @@ const cwd = join(dirname, '../packages', packageNameArg);
 // find closest node_modules folder. This might be in the package folder or at the monorepo root.
 const nodeModulesPath = findup(`node_modules`, { cwd }); 
 // build the dependency path from the closest node_modules folder
-const dependencyPath = join(nodeModulesPath, dependencyNameArg);
+const dependencyPath = join(nodeModulesPath || '', dependencyNameArg);
 
 // make directory if it doesn't already exist
 execSync(`mkdir -p ${join(cwd, 'dist')}`);

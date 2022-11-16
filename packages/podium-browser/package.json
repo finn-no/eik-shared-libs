@@ -1,20 +1,16 @@
 {
-    "name": "@podium/browser",
-    "private": "true",
+    "name": "@finn-no/podium-browser",
     "version": "0.0.0",
     "description": "An ESM version of @podium/browser for Finn",
     "type": "module",
-    "main": "./dist/index.js",
     "scripts": {
+        "copy": "echo 'noop';",
         "build": "node ./esbuild.js",
-        "copy": "echo \"No copy command installed\"",
         "eik:login": "eik login",
         "eik:publish": "eik publish",
         "eik:alias": "eik npm-alias",
         "eik:publish:ci": "../../scripts/publish.js podium-browser @podium/browser"
     },
-    "author": "",
-    "license": "ISC",
     "dependencies": {
         "@podium/browser": "1.2.1"
     },
@@ -22,6 +18,7 @@
         "esbuild": "0.15.14"
     },
     "eik": {
+        "name": "@podium/browser",
         "server": "https://assets.finn.no",
         "type": "npm",
         "files": "dist"

@@ -19,7 +19,7 @@ const packageJSONPath = join(cwd, './package.json');
 const packageJSON = JSON.parse(readFileSync(packageJSONPath, 'utf8'));
 
 // grab Eik variables from package.json
-const { eik: { name: eikName, server, files, type }, name: pkgName } = packageJSON;
+const { eik: { name, server, files, type } } = packageJSON;
 
 // grab version directly from the dependency
 let version = packageJSON.dependencies[dependencyNameArg];
@@ -27,9 +27,6 @@ let version = packageJSON.dependencies[dependencyNameArg];
 if (stripPrerelease) {
     version = `${semver.major(version)}.${semver.minor(version)}.${semver.patch(version)}`;
 }
-
-// allow eik name field to overwrite package name field
-const name = eikName || pkgName;
 
 const token = await eik.login({
     server,
