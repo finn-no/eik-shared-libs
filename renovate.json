@@ -23,6 +23,16 @@
       "major": {
         "automerge": false
       }
+    },
+    {
+      "matchPackageNames": ["vue"],
+      "matchCurrentVersion": "2",
+      "allowedVersions": "2"
+    },
+    {
+      "matchPackageNames": ["vue"],
+      "matchCurrentVersion": "3",
+      "allowedVersions": "3"
     }
   ]
 }
