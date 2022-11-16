@@ -16,6 +16,7 @@
     "packages/react-dom-18",
     "packages/trackjs",
     "packages/vue",
+    "packages/vue-2",
     "packages/lit",
     "packages/lit-element",
     "packages/lit-html",
