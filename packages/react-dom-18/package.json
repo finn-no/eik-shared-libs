@@ -23,7 +23,7 @@
     "@rollup/plugin-node-resolve": "15.0.1",
     "@rollup/plugin-replace": "5.0.1",
     "@rollup/plugin-terser": "0.2.0",
-    "rollup": "3.7.4",
+    "rollup": "3.7.5",
     "semver": "7.3.8"
   },
   "eik": {
