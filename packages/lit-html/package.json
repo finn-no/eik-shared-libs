@@ -15,7 +15,7 @@
     "lit-html": "2.5.0"
   },
   "devDependencies": {
-    "esbuild": "0.16.12"
+    "esbuild": "0.16.17"
   },
   "eik": {
     "name": "lit-html",
