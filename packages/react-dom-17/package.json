@@ -17,7 +17,7 @@
   },
   "devDependencies": {
     "@eik/rollup-plugin": "4.0.49",
-    "rollup": "3.25.1",
+    "rollup": "3.26.3",
     "semver": "7.5.4"
   },
   "eik": {
