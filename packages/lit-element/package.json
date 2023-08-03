@@ -15,7 +15,7 @@
     "lit-element": "3.3.3"
   },
   "devDependencies": {
-    "esbuild": "0.18.16"
+    "esbuild": "0.18.17"
   },
   "eik": {
     "name": "lit-element",
