@@ -5,9 +5,9 @@
   "type": "module",
   "license": "MIT",
   "scripts": {
-    "build": "npm run build -ws",
-    "copy": "npm run copy -ws",
-    "publish": "npm run eik:publish:ci -ws"
+    "build": "npm run build --workspaces --if-present",
+    "copy": "npm run copy --workspaces --if-present",
+    "publish": "npm run eik:publish:ci --workspaces --if-present"
   },
   "workspaces": [
     "packages/react-17",
@@ -20,7 +20,8 @@
     "packages/lit",
     "packages/lit-element",
     "packages/lit-html",
-    "packages/podium-browser"
+    "packages/podium-browser",
+    "packages/lit-labs-ssr-client"
   ],
   "devDependencies": {
     "@eik/cli": "2.0.22",

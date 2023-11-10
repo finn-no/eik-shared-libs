@@ -1,0 +1,26 @@
+{
+  "name": "@borealis/lit-ssr-client",
+  "version": "0.0.0",
+  "description": "An ESM version of @lit-labs/ssr-client for NMP",
+  "type": "module",
+  "scripts": {
+    "copy": "echo 'noop';",
+    "build": "node ./esbuild.js",
+    "eik:login": "eik login",
+    "eik:publish": "eik publish",
+    "eik:alias": "eik npm-alias",
+    "eik:publish:ci": "../../scripts/publish.js lit-labs-ssr-client @lit-labs/ssr-client"
+  },
+  "dependencies": {
+    "@lit-labs/ssr-client": "1.1.5"
+  },
+  "devDependencies": {
+    "esbuild": "0.19.0"
+  },
+  "eik": {
+    "name": "@lit-labs/ssr-client",
+    "server": "https://assets.finn.no",
+    "type": "npm",
+    "files": "dist"
+  }
+}
