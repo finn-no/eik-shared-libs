@@ -5,12 +5,10 @@
   "packageRules": [
     {
       "matchDepTypes": ["dependencies"],
-      "schedule": [
-        "after 6pm every weekday",
-        "before 6am every weekday"
-      ],
+      "schedule": ["after 6pm every weekday", "before 6am every weekday"],
       "rangeStrategy": "pin",
       "automerge": true,
+      "requiredStatusChecks": null,
       "major": {
         "automerge": false
       }
@@ -20,6 +18,7 @@
       "schedule": ["every weekend"],
       "rangeStrategy": "pin",
       "automerge": true,
+      "requiredStatusChecks": null,
       "major": {
         "automerge": false
       }
