@@ -12,7 +12,7 @@
     "eik:publish:ci": "../../scripts/publish.js lit-element lit-element"
   },
   "dependencies": {
-    "lit-element": "3.3.3"
+    "lit-element": "4.0.2"
   },
   "devDependencies": {
     "esbuild": "0.19.7"
