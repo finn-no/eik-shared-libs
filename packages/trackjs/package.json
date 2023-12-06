@@ -13,7 +13,7 @@
         "eik:publish:ci": "../../scripts/publish.js trackjs trackjs"
     },
     "dependencies": {
-        "trackjs": "3.10.3"
+        "trackjs": "3.10.4"
     },
     "eik": {
         "name": "trackjs",
