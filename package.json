@@ -21,7 +21,10 @@
     "packages/lit-element",
     "packages/lit-html",
     "packages/podium-browser",
-    "packages/lit-labs-ssr-client"
+    "packages/lit-labs-ssr-client",
+    "packages/warp-ds-elements-core",
+    "packages/warp-ds-elements",
+    "packages/warp-ds-icons"
   ],
   "devDependencies": {
     "@eik/cli": "2.0.22",

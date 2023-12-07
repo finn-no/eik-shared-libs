@@ -1,0 +1,31 @@
+{
+  "name": "warp-ds-elements-core",
+  "version": "0.0.0",
+  "description": "An Eik friendly global build for @warp-ds/elements-core",
+  "type": "module",
+  "scripts": {
+    "copy": "echo 'noop';",
+    "build": "npx rollup -c",
+    "eik:login": "eik login",
+    "eik:publish": "eik publish",
+    "eik:alias": "eik npm-alias",
+    "eik:publish:ci": "../../scripts/publish.js warp-ds-elements-core @warp-ds/elements-core"
+  },
+  "dependencies": {
+    "@warp-ds/elements-core": "0.0.1-alpha.9"
+  },
+  "devDependencies": {
+    "@eik/rollup-plugin": "4.0.59",
+    "@rollup/plugin-commonjs": "25.0.7",
+    "@rollup/plugin-node-resolve": "15.2.3",
+    "@rollup/plugin-terser": "0.4.4",
+    "esbuild": "0.19.7",
+    "rollup": "4.6.0"
+  },
+  "eik": {
+    "name": "@lit-labs/ssr-client",
+    "server": "https://assets.finn.no",
+    "type": "npm",
+    "files": "dist"
+  }
+}
