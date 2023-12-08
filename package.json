@@ -1,7 +1,7 @@
 {
-  "name": "@finn-no/frontend-libraries",
+  "name": "npm-frontend-libraries",
   "version": "0.0.0",
-  "description": "Shared frontend libraries at FINN",
+  "description": "Shared frontend libraries for NMP",
   "type": "module",
   "license": "MIT",
   "scripts": {
@@ -24,7 +24,9 @@
     "packages/lit-labs-ssr-client",
     "packages/warp-ds-elements-core",
     "packages/warp-ds-elements",
-    "packages/warp-ds-icons"
+    "packages/warp-ds-icons",
+    "packages/warp-ds-react",
+    "packages/warp-ds-vue"
   ],
   "devDependencies": {
     "@eik/cli": "2.0.22",
