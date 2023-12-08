@@ -6,10 +6,10 @@ import commonjs from '@rollup/plugin-commonjs';
 
 const { resolve } = createRequire(import.meta.url);
 
-const versions = ["lit/v2", "lit/v3"];
+const versions = ["v2", "v3"];
 const config = [];
 
-const lit = (version) => `https://assets.finn.no/npm/${version}/lit.min.js`;
+const lit = (version) => `https://assets.finn.no/npm/lit/${version}/lit.min.js`;
 
 for (const version of versions) {
   config.push({
@@ -21,7 +21,7 @@ for (const version of versions) {
       terser(),
     ],
     output: {
-      file: `dist/${version}/elements-core.js`,
+      file: `dist/lit-${version}.js`,
       format: "esm",
     },
   });
@@ -34,7 +34,7 @@ for (const version of versions) {
       terser(),
     ],
     output: {
-      file: `dist/${version}/global.js`,
+      file: `dist/global/lit-${version}.js`,
       format: "esm",
     },
   });
