@@ -1,0 +1,30 @@
+{
+  "name": "warp-ds-elements",
+  "version": "0.0.0",
+  "description": "An Eik ready version of @warp-ds/elements",
+  "type": "module",
+  "scripts": {
+    "copy": "echo 'noop';",
+    "build": "npx rollup -c",
+    "eik:login": "eik login",
+    "eik:publish": "eik publish",
+    "eik:alias": "eik npm-alias",
+    "eik:publish:ci": "../../scripts/publish.js warp-ds-elements @warp-ds/elements"
+  },
+  "dependencies": {
+    "@warp-ds/elements": "1.2.1"
+  },
+  "devDependencies": {
+    "@eik/rollup-plugin": "4.0.59",
+    "@rollup/plugin-commonjs": "25.0.7",
+    "@rollup/plugin-node-resolve": "15.2.3",
+    "@rollup/plugin-terser": "0.4.4",
+    "rollup": "4.6.0"
+  },
+  "eik": {
+    "name": "@warp-ds/elements",
+    "server": "https://assets.finn.no",
+    "type": "npm",
+    "files": "dist"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "warp-ds-vue",
+  "version": "0.0.0",
+  "description": "An Eik ready version of @warp-ds/vue",
+  "type": "module",
+  "scripts": {
+    "copy": "echo 'noop';",
+    "build": "npx rollup -c",
+    "eik:login": "eik login",
+    "eik:publish": "eik publish",
+    "eik:alias": "eik npm-alias",
+    "eik:publish:ci": "../../scripts/publish.js warp-ds-vue @warp-ds/vue"
+  },
+  "dependencies": {
+    "@warp-ds/vue": "1.2.2"
+  },
+  "devDependencies": {
+    "@eik/rollup-plugin": "4.0.59",
+    "@rollup/plugin-commonjs": "25.0.7",
+    "@rollup/plugin-node-resolve": "15.2.3",
+    "@rollup/plugin-terser": "0.4.4",
+    "rollup": "4.6.0"
+  },
+  "eik": {
+    "name": "@warp-ds/vue",
+    "server": "https://assets.finn.no",
+    "type": "npm",
+    "files": "dist"
+  }
+}
