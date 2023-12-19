@@ -1,11 +1,11 @@
 import esbuild from "esbuild";
 
 await esbuild.build({
-  entryPoints: ["./index.js"],
+  entryPoints: ["./lit.min.js", "static-html.js"],
   bundle: true,
   minify: true,
   format: "esm",
-  outfile: "dist/lit.min.js",
+  outdir: "dist/",
   target: ["es2017"],
   sourcemap: true,
 });
