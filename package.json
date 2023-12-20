@@ -1,5 +1,5 @@
 {
-  "name": "npm-frontend-libraries",
+  "name": "nmp-frontend-libraries",
   "version": "0.0.0",
   "description": "Shared frontend libraries for NMP",
   "type": "module",
@@ -26,7 +26,8 @@
     "packages/warp-ds-elements",
     "packages/warp-ds-icons",
     "packages/warp-ds-react",
-    "packages/warp-ds-vue"
+    "packages/warp-ds-vue",
+    "packages/warp-ds-css"
   ],
   "devDependencies": {
     "@eik/cli": "2.0.22",
