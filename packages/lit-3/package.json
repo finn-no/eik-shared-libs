@@ -9,7 +9,7 @@
     "eik:login": "eik login",
     "eik:publish": "eik publish",
     "eik:alias": "eik npm-alias",
-    "eik:publish:ci": "../../scripts/publish.js lit lit"
+    "eik:publish:ci": "../../scripts/publish.js lit-3 lit"
   },
   "dependencies": {
     "lit": "3.1.0"
