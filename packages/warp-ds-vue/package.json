@@ -12,7 +12,7 @@
     "eik:publish:ci": "../../scripts/publish.js warp-ds-vue @warp-ds/vue"
   },
   "dependencies": {
-    "@warp-ds/vue": "1.2.2"
+    "@warp-ds/vue": "1.2.3"
   },
   "devDependencies": {
     "@eik/rollup-plugin": "4.0.60",
