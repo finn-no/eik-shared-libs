@@ -18,6 +18,8 @@
     "packages/vue-3",
     "packages/vue-2",
     "packages/lit",
+    "packages/lit-2",
+    "packages/lit-3",
     "packages/lit-element",
     "packages/lit-html",
     "packages/podium-browser",
