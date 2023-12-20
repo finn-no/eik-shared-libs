@@ -26,7 +26,8 @@
     "packages/warp-ds-elements",
     "packages/warp-ds-icons",
     "packages/warp-ds-react",
-    "packages/warp-ds-vue"
+    "packages/warp-ds-vue",
+    "packages/warp-ds-fonts"
   ],
   "devDependencies": {
     "@eik/cli": "2.0.22",
