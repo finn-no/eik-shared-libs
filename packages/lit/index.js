@@ -24,24 +24,9 @@ export * from "lit/directives/until.js";
 export * from "lit/directives/when.js";
 
 export {
-  /**
-   * @deprecated Import from `lit/static-html.js` instead
-   */
   html as staticHtml,
-  /**
-   * @deprecated Import from `lit/static-html.js` instead
-   */
   literal,
-  /**
-   * @deprecated Import from `lit/static-html.js` instead
-   */
   svg as staticSvg,
-  /**
-   * @deprecated Import from `lit/static-html.js` instead
-   */
   unsafeStatic,
-  /**
-   * @deprecated Import from `lit/static-html.js` instead
-   */
   withStatic,
 } from "lit/static-html.js";
