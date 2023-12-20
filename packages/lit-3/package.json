@@ -1,0 +1,26 @@
+{
+  "name": "lit-3",
+  "version": "0.0.0",
+  "description": "An ESM version of Lit for Finn",
+  "type": "module",
+  "scripts": {
+    "copy": "echo 'noop';",
+    "build": "node ./esbuild.js",
+    "eik:login": "eik login",
+    "eik:publish": "eik publish",
+    "eik:alias": "eik npm-alias",
+    "eik:publish:ci": "../../scripts/publish.js lit-3 lit"
+  },
+  "dependencies": {
+    "lit": "3.1.0"
+  },
+  "devDependencies": {
+    "esbuild": "0.19.9"
+  },
+  "eik": {
+    "name": "lit-3",
+    "server": "https://assets.finn.no",
+    "type": "npm",
+    "files": "dist"
+  }
+}

@@ -32,6 +32,16 @@
       "matchPackageNames": ["vue"],
       "matchCurrentVersion": "3",
       "allowedVersions": "3"
+    },
+    {
+      "matchPackageNames": ["lit"],
+      "matchCurrentVersion": "2",
+      "allowedVersions": "2"
+    },
+    {
+      "matchPackageNames": ["lit"],
+      "matchCurrentVersion": "3",
+      "allowedVersions": "3"
     }
   ]
 }
