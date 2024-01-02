@@ -15,7 +15,8 @@
     "lit": "2.8.0"
   },
   "devDependencies": {
-    "esbuild": "0.19.11"
+    "esbuild": "0.19.11",
+    "@eik/esbuild-plugin": "1.1.45"
   },
   "eik": {
     "name": "lit-2",
