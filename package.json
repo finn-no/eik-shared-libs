@@ -26,7 +26,6 @@
     "packages/lit-labs-ssr-client",
     "packages/warp-ds-elements-core",
     "packages/warp-ds-elements",
-    "packages/warp-ds-icons",
     "packages/warp-ds-react",
     "packages/warp-ds-vue",
     "packages/warp-ds-css"
