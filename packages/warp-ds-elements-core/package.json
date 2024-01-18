@@ -12,7 +12,7 @@
     "eik:publish:ci": "../../scripts/publish.js warp-ds-elements-core @warp-ds/elements-core"
   },
   "dependencies": {
-    "@warp-ds/elements-core": "0.0.1-alpha.9"
+    "@warp-ds/elements-core": "0.0.1-alpha.10"
   },
   "devDependencies": {
     "@eik/rollup-plugin": "4.0.60",
@@ -23,7 +23,7 @@
     "rollup": "4.9.5"
   },
   "eik": {
-    "name": "@lit-labs/ssr-client",
+    "name": "@warp-ds/elements-core",
     "server": "https://assets.finn.no",
     "type": "npm",
     "files": "dist"
