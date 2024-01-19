@@ -1,15 +1,15 @@
 import { createRequire } from "module";
 import plugin from "@eik/rollup-plugin";
-import terser from '@rollup/plugin-terser';
-import { nodeResolve } from '@rollup/plugin-node-resolve';
-import commonjs from '@rollup/plugin-commonjs';
+import terser from "@rollup/plugin-terser";
+import { nodeResolve } from "@rollup/plugin-node-resolve";
+import commonjs from "@rollup/plugin-commonjs";
 
 const { resolve } = createRequire(import.meta.url);
 
-const versions = ["v2", "v3"];
+const versions = ["2", "3"];
 const config = [];
 
-const lit = (version) => `https://assets.finn.no/npm/lit/${version}/lit.min.js`;
+const lit = (version) => `https://assets.finn.no/npm/lit-${version}/v${version}/lit.min.js`;
 
 for (const version of versions) {
   config.push({
@@ -21,7 +21,7 @@ for (const version of versions) {
       terser(),
     ],
     output: {
-      file: `dist/lit-${version}.js`,
+      file: `dist/lit-v${version}.js`,
       format: "esm",
     },
   });
@@ -34,7 +34,7 @@ for (const version of versions) {
       terser(),
     ],
     output: {
-      file: `dist/global/lit-${version}.js`,
+      file: `dist/global/lit-v${version}.js`,
       format: "esm",
     },
   });
