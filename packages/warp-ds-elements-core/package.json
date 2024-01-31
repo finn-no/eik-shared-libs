@@ -12,7 +12,7 @@
     "eik:publish:ci": "../../scripts/publish.js warp-ds-elements-core @warp-ds/elements-core"
   },
   "dependencies": {
-    "@warp-ds/elements-core": "0.0.1-alpha.10"
+    "@warp-ds/elements-core": "0.0.1-alpha.11"
   },
   "devDependencies": {
     "@eik/rollup-plugin": "4.0.61",
