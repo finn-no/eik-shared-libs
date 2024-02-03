@@ -31,7 +31,7 @@
     "packages/warp-ds-css"
   ],
   "devDependencies": {
-    "@eik/cli": "2.0.27",
+    "@eik/cli": "2.0.29",
     "findup-sync": "5.0.0",
     "semver": "7.5.4"
   }
