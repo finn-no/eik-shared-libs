@@ -18,7 +18,7 @@
   "devDependencies": {
     "@eik/rollup-plugin": "4.0.61",
     "rollup": "4.9.6",
-    "semver": "7.5.4"
+    "semver": "7.6.0"
   },
   "eik": {
     "name": "react-dom",
