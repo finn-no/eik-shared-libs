@@ -12,7 +12,7 @@
     "eik:publish:ci": "../../scripts/publish.js warp-ds-css @warp-ds/css"
   },
   "dependencies": {
-    "@warp-ds/css": "1.8.0"
+    "@warp-ds/css": "1.8.1"
   },
   "eik": {
     "name": "@warp-ds/css",
