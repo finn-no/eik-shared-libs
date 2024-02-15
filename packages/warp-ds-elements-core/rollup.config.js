@@ -1,6 +1,5 @@
 import fs from "fs";
 import path from "path";
-import { createRequire } from "module";
 import plugin from "@eik/rollup-plugin";
 import terser from "@rollup/plugin-terser";
 import { nodeResolve } from "@rollup/plugin-node-resolve";
@@ -8,14 +7,11 @@ import commonjs from "@rollup/plugin-commonjs";
 
 const moduleName = "@warp-ds/elements-core";
 
-const { resolve } = createRequire(import.meta.url);
-
 function getSubpathExports(modulePath) {
-  let absolutePath = resolve(modulePath);
-  absolutePath = absolutePath.substring(
-    0,
-    absolutePath.indexOf(moduleName) + moduleName.length + "/".length
-  );
+  let absolutePath = import.meta.resolve(modulePath);
+  absolutePath = absolutePath
+    .substring(0, absolutePath.indexOf(moduleName) + moduleName.length + "/".length)
+    .replace("file:/", "");
   const packageJsonPath = path.join(absolutePath, "package.json");
   try {
     const packageJsonContent = fs.readFileSync(packageJsonPath, "utf8");
@@ -26,7 +22,16 @@ function getSubpathExports(modulePath) {
     }
     if (packageJson.exports) {
       for (const [key, value] of Object.entries(packageJson.exports)) {
-        if (!value.endsWith(".js")) {
+        if (typeof value !== "string") {
+          /**
+           * Handle these types of exports by replacing the object with the value of `import`
+           *  "./element.js": {
+           *    "import": "./src/element.js",
+           *    "types": "./types/element.d.ts"
+           *  },
+           */
+          packageJson.exports[key] = value.import;
+        } else if (!value.endsWith(".js")) {
           delete packageJson.exports[key];
         }
       }
@@ -40,7 +45,7 @@ function getSubpathExports(modulePath) {
   }
 }
 
-const modulePath = resolve(moduleName);
+const modulePath = import.meta.resolve(moduleName);
 const subpathExports = getSubpathExports(modulePath);
 
 const lit = (version) => `https://assets.finn.no/npm/lit-${version}/v${version}/lit.min.js`;
@@ -69,7 +74,7 @@ for (const litVersion of litVersions) {
     }
 
     config.push({
-      input: resolve(`${moduleName}${subpathImportPart}`),
+      input: import.meta.resolve(`${moduleName}${subpathImportPart}`).replace("file:/", ""),
       plugins: [
         plugin({ maps: [{ imports: { lit: lit(litVersion) } }] }),
         nodeResolve(),
