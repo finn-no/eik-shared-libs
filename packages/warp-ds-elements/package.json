@@ -24,7 +24,6 @@
   "eik": {
     "name": "@warp-ds/elements",
     "server": "https://assets.finn.no",
-    "type": "npm",
     "files": "dist"
   }
 }
