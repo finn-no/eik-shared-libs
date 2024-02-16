@@ -76,7 +76,22 @@ for (const litVersion of litVersions) {
     config.push({
       input: import.meta.resolve(`${moduleName}${subpathImportPart}`).replace("file:/", ""),
       plugins: [
-        plugin({ maps: [{ imports: { lit: lit(litVersion) } }] }),
+        plugin({
+          maps: [
+            {
+              imports: {
+                "@warp-ds/elements-core":
+                  "https://assets.finn.no/pkg/@warp-ds/elements-core/v0/element.js",
+                "@warp-ds/elements-core/element.js":
+                  "https://assets.finn.no/pkg/@warp-ds/elements-core/v0/element.js",
+                "@warp-ds/elements-core/global.js":
+                  "https://assets.finn.no/pkg/@warp-ds/elements-core/v0/global.js",
+                lit: lit(litVersion),
+                "lit-html": `https://assets.finn.no/npm/lit-html/v${litVersion}/lit-html.min.js`,
+              },
+            },
+          ],
+        }),
         nodeResolve(),
         commonjs(),
         terser(),
