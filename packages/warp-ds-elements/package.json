@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "copy": "echo 'noop';",
-    "build": "npx rollup -c && mv dist/components dist/packages && mv dist/lit-3/components dist/lit-3/packages",
+    "build": "rm -rf dist && npx rollup -c && mv dist/components dist/packages && mv dist/lit-3/components dist/lit-3/packages && mv dist/toast/index.js dist/api.js",
     "eik:login": "eik login",
     "eik:publish": "eik publish",
     "eik:alias": "eik npm-alias",
