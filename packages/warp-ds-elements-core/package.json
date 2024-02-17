@@ -15,7 +15,7 @@
     "@warp-ds/elements-core": "0.0.1-alpha.12"
   },
   "devDependencies": {
-    "@eik/rollup-plugin": "4.0.61",
+    "@eik/rollup-plugin": "4.0.62",
     "@rollup/plugin-commonjs": "25.0.7",
     "@rollup/plugin-node-resolve": "15.2.3",
     "@rollup/plugin-terser": "0.4.4",
