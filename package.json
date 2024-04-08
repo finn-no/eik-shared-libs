@@ -10,8 +10,7 @@
     "publish": "npm run eik:publish:ci --workspaces --if-present"
   },
   "workspaces": [
-    "packages/react-17",
-    "packages/react-dom-17",
+    "packages/braze",
     "packages/react-18",
     "packages/react-dom-18",
     "packages/trackjs",
@@ -23,12 +22,7 @@
     "packages/lit-element",
     "packages/lit-html",
     "packages/podium-browser",
-    "packages/lit-labs-ssr-client",
-    "packages/warp-ds-elements-core",
-    "packages/warp-ds-elements",
-    "packages/warp-ds-react",
-    "packages/warp-ds-vue",
-    "packages/warp-ds-css"
+    "packages/lit-labs-ssr-client"
   ],
   "devDependencies": {
     "@eik/cli": "2.0.33",
