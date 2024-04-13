@@ -24,7 +24,7 @@
     "packages/lit-labs-ssr-client"
   ],
   "devDependencies": {
-    "@eik/cli": "2.0.33",
+    "@eik/cli": "2.0.34",
     "findup-sync": "5.0.0",
     "semver": "7.6.0"
   }
