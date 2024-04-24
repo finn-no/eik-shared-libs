@@ -12,7 +12,7 @@
     "eik:publish:ci": "../../scripts/publish.js vue-3 vue"
   },
   "dependencies": {
-    "vue": "3.4.24"
+    "vue": "3.4.25"
   },
   "eik": {
     "name": "vue",
