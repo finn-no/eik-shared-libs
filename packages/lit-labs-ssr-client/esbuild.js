@@ -1,25 +1,15 @@
 import { createRequire } from "module";
-import esbuild from "esbuild";
+import { build } from "../../esbuild.js";
 
 const { resolve } = createRequire(import.meta.url);
 
 await Promise.all([
-	esbuild.build({
-		entryPoints: [resolve("@lit-labs/ssr-client/lit-element-hydrate-support.js")],
-		bundle: true,
-		minify: true,
-		format: "esm",
-		outfile: "./dist/lit-element-hydrate-support.js",
-		target: ["es2017"],
-		sourcemap: true,
-	}),
-	esbuild.build({
-		entryPoints: [resolve("@lit-labs/ssr-client/directives/render-light.js")],
-		bundle: true,
-		minify: true,
-		format: "esm",
-		outfile: "./dist/directives/render-light.js",
-		target: ["es2017"],
-		sourcemap: true,
-	})
+  build({
+    entryPoints: [resolve("@lit-labs/ssr-client/lit-element-hydrate-support.js")],
+    outfile: "./dist/lit-element-hydrate-support.js",
+  }),
+  build({
+    entryPoints: [resolve("@lit-labs/ssr-client/directives/render-light.js")],
+    outfile: "./dist/directives/render-light.js",
+  }),
 ]);

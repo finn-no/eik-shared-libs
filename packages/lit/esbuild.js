@@ -1,11 +1,6 @@
-import esbuild from "esbuild";
+import { build } from "../../esbuild.js";
 
-await esbuild.build({
+await build({
   entryPoints: ["./index.js"],
-  bundle: true,
-  minify: true,
-  format: "esm",
   outfile: "dist/lit.min.js",
-  target: ["es2017"],
-  sourcemap: true,
 });

@@ -22,7 +22,9 @@
     "@rollup/plugin-commonjs": "25.0.7",
     "@rollup/plugin-node-resolve": "15.2.3",
     "@rollup/plugin-replace": "5.0.5",
+    "@rollup/plugin-swc": "0.3.0",
     "@rollup/plugin-terser": "0.4.4",
+    "browserslist": "4.23.0",
     "rollup": "4.16.1",
     "semver": "7.6.0"
   },

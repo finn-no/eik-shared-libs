@@ -4,6 +4,6 @@ import { createRequire } from "module";
 const { resolve } = createRequire(import.meta.url);
 
 await build({
-  entryPoints: [resolve("@braze/web-sdk")],
+  entryPoints: [resolve("vue")],
   outfile: "./dist/index.js",
 });
