@@ -5,8 +5,8 @@
   "description": "An ESM version of TrackJS for Finn",
   "type": "module",
   "scripts": {
-    "copy": "../../scripts/copy.js trackjs trackjs index.esm.js",
-    "build": "echo 'noop';",
+    "copy": "echo 'noop';",
+    "build": "node ./esbuild.js",
     "eik:login": "eik login",
     "eik:publish": "eik publish",
     "eik:alias": "eik npm-alias",

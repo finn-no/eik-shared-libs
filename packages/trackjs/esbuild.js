@@ -4,6 +4,6 @@ import { createRequire } from "module";
 const { resolve } = createRequire(import.meta.url);
 
 await build({
-  entryPoints: [resolve("@finn-no/trackjs")],
-  outfile: "./dist/index.esm.js",
+  entryPoints: [resolve("trackjs")],
+  outfile: "./dist/trackjs.production.min.js",
 });
