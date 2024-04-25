@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "copy": "../../scripts/copy.js vue-3 vue dist/*.js",
-    "build": "echo 'noop';",
+    "build": "node esbuild.js",
     "eik:login": "eik login",
     "eik:publish": "eik publish",
     "eik:alias": "eik npm-alias",
