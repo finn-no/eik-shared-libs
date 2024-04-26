@@ -15,7 +15,7 @@
     "eik:publish:ci": "../../scripts/publish.js react-dom-18 react-dom"
   },
   "dependencies": {
-    "react-dom": "18.3.0"
+    "react-dom": "18.3.1"
   },
   "devDependencies": {
     "@eik/rollup-plugin": "4.0.63",
