@@ -24,7 +24,7 @@
     "@rollup/plugin-replace": "5.0.5",
     "@rollup/plugin-terser": "0.4.4",
     "rollup": "4.17.2",
-    "semver": "7.6.0"
+    "semver": "7.6.2"
   },
   "eik": {
     "name": "react-dom",
