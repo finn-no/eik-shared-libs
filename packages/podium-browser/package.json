@@ -12,7 +12,7 @@
         "eik:publish:ci": "../../scripts/publish.js podium-browser @podium/browser"
     },
     "dependencies": {
-        "@podium/browser": "1.2.1"
+        "@podium/browser": "1.2.3"
     },
     "devDependencies": {
         "esbuild": "0.21.3"
