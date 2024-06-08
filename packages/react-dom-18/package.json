@@ -21,7 +21,7 @@
     "@eik/rollup-plugin": "4.0.63",
     "@rollup/plugin-commonjs": "25.0.8",
     "@rollup/plugin-node-resolve": "15.2.3",
-    "@rollup/plugin-replace": "5.0.5",
+    "@rollup/plugin-replace": "5.0.7",
     "@rollup/plugin-terser": "0.4.4",
     "rollup": "4.18.0",
     "semver": "7.6.2"
