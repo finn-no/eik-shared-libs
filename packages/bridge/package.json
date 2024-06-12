@@ -1,0 +1,23 @@
+{
+  "name": "podium-bride",
+  "version": "0.0.0",
+  "description": "Podium hybrid bridge",
+  "type": "module",
+  "scripts": {
+    "copy": "echo 'noop';",
+    "build": "node ./esbuild.js",
+    "eik:login": "eik login",
+    "eik:publish": "eik publish",
+    "eik:alias": "eik npm-alias",
+    "eik:publish:ci": "../../scripts/publish.js bridge @podium/bridge"
+  },
+  "dependencies": {
+    "@podium/bridge": "^1.2.2"
+  },
+  "eik": {
+    "name": "@podium/bridge",
+    "server": "https://assets.finn.no",
+    "type": "npm",
+    "files": "dist"
+  }
+}
