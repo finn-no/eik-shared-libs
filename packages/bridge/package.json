@@ -12,7 +12,7 @@
     "eik:publish:ci": "../../scripts/publish.js podium @podium/bridge"
   },
   "dependencies": {
-    "@podium/bridge": "^1.2.2"
+    "@podium/bridge": "1.2.2"
   },
   "eik": {
     "name": "@podium/bridge",
