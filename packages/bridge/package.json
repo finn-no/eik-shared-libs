@@ -9,7 +9,7 @@
     "eik:login": "eik login",
     "eik:publish": "eik publish",
     "eik:alias": "eik npm-alias",
-    "eik:publish:ci": "../../scripts/publish.js bridge @podium/bridge"
+    "eik:publish:ci": "../../scripts/publish.js podium @podium/bridge"
   },
   "dependencies": {
     "@podium/bridge": "^1.2.2"
