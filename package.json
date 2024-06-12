@@ -10,6 +10,7 @@
     "publish": "npm run eik:publish:ci --workspaces --if-present"
   },
   "workspaces": [
+    "packages/bridge",
     "packages/braze",
     "packages/react-18",
     "packages/react-dom-18",
