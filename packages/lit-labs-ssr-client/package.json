@@ -15,7 +15,7 @@
     "@lit-labs/ssr-client": "1.1.7"
   },
   "devDependencies": {
-    "esbuild": "0.22.0"
+    "esbuild": "0.23.0"
   },
   "eik": {
     "name": "@lit-labs/ssr-client",
