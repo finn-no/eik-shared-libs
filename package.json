@@ -27,6 +27,6 @@
   "devDependencies": {
     "@eik/cli": "2.0.38",
     "findup-sync": "5.0.0",
-    "semver": "7.6.2"
+    "semver": "7.6.3"
   }
 }
