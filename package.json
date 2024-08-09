@@ -26,6 +26,8 @@
   ],
   "devDependencies": {
     "@eik/cli": "2.0.39",
+    "browserslist": "4.23.0",
+    "browserslist-to-esbuild": "2.1.1",
     "findup-sync": "5.0.0",
     "semver": "7.6.3"
   }

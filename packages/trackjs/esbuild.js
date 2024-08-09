@@ -4,6 +4,6 @@ import { createRequire } from "module";
 const { resolve } = createRequire(import.meta.url);
 
 await build({
-  entryPoints: [resolve("@braze/web-sdk")],
-  outfile: "./dist/index.js",
+  entryPoints: [resolve("trackjs")],
+  outfile: "./dist/trackjs.production.min.js",
 });
