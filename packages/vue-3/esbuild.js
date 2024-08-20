@@ -9,22 +9,21 @@ const dir = await fs.readdir(path.resolve(import.meta.dirname, "dist"));
 for (const file of dir) {
   if (file.endsWith(".js")) {
     const filePath = path.resolve(import.meta.dirname, "dist", file);
+    let buildFile = filePath;
     if (filePath.includes(".cjs")) {
-      // These shouldn't be used by any of us, but they've been included in the Eik asset
-      await build({
-        allowOverwrite: true,
-        sourcemap: false,
-        format: "cjs",
-        entryPoints: [filePath],
-        outfile: filePath,
-      });
-    } else {
-      await build({
-        allowOverwrite: true,
-        sourcemap: false,
-        entryPoints: [filePath],
-        outfile: filePath,
-      });
+      // Rename .cjs.js to a .tmp.cjs file to prevent Esbuild choking
+      buildFile = filePath.replace(".cjs", ".tmp").replace(".js", ".cjs");
+      await fs.rename(filePath, buildFile);
+    }
+    await build({
+      allowOverwrite: true,
+      sourcemap: false,
+      entryPoints: [buildFile],
+      outfile: filePath,
+    });
+    if (filePath.includes(".cjs")) {
+      // cleanup by removing the .tmp.cjs file
+      await fs.unlink(buildFile);
     }
   }
 }

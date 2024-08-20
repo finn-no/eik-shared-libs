@@ -12,20 +12,44 @@
 // 2. dependency name eg. @fabric-ds/css
 // 3. dependency file or dir path eg. dist/fabric.min.css eg. dist/*
 
-import { join } from 'path';
-import findup from 'findup-sync';
-import { execSync } from 'child_process';
+import { join } from "path";
+import { execSync } from "child_process";
 
-const dirname = new URL('./', import.meta.url).pathname;
+const dirname = new URL("./", import.meta.url).pathname;
 const [, , packageNameArg, dependencyNameArg, dependencyFilePathArg] = process.argv;
-const cwd = join(dirname, '../packages', packageNameArg);
+const packageDir = join(dirname, "../packages", packageNameArg);
+const rootDir = join(dirname, "../");
 
-// find closest node_modules folder. This might be in the package folder or at the monorepo root.
-const nodeModulesPath = findup(`node_modules`, { cwd }); 
 // build the dependency path from the closest node_modules folder
-const dependencyPath = join(nodeModulesPath || '', dependencyNameArg);
+const localDependencyPath = join(packageDir, "node_modules", dependencyNameArg);
+// navigate to the root node_modules folder as a backup
+const rootDependencyPath = join(rootDir, "node_modules", dependencyNameArg);
 
 // make directory if it doesn't already exist
-execSync(`mkdir -p ${join(cwd, 'dist')}`);
+console.log(`  ==> Making directory ${join(packageDir, "dist")}`);
+execSync(`mkdir -p ${join(packageDir, "dist")}`);
 // copy the dependency files to the packages dist folder ready for uploading
-execSync(`cp -R ${join(dependencyPath, dependencyFilePathArg)} ${join(cwd, 'dist/')}`);
+try {
+  // try to copy from package node_modules folder
+  console.log(`  ==> Copying file ${dependencyFilePathArg}`);
+  console.log(`      From ${localDependencyPath}`);
+  console.log(`      To ${join(packageDir, "dist/")}`);
+  execSync(
+    `cp -R ${join(localDependencyPath, dependencyFilePathArg)} ${join(packageDir, "dist/")}`
+  );
+} catch (e) {
+  // fallback to root node_modules folder
+  console.log(`  ==> Copying failed`);
+  console.log(`  ==> Retrying copy from root node_modules folder...`);
+  console.log(`  ==> Copying file ${dependencyFilePathArg}`);
+  console.log(`      From ${rootDependencyPath}`);
+  console.log(`      To ${join(packageDir, "dist/")}`);
+  try {
+    execSync(
+      `cp -R ${join(rootDependencyPath, dependencyFilePathArg)} ${join(packageDir, "dist/")}`
+    );
+    console.log(`  ==> Copying successful`);
+  } catch (e) {
+    console.log(`  ==> Copying failed, aborting`);
+  }
+}
