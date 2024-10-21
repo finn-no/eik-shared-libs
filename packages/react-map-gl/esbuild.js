@@ -6,4 +6,5 @@ const { resolve } = createRequire(import.meta.url);
 await build({
   entryPoints: [resolve("react-map-gl")],
   outfile: "./dist/index.js",
+  external: ["mapbox-gl", "react", "react-dom"]
 });

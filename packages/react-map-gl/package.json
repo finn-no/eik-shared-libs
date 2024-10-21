@@ -1,5 +1,5 @@
 {
-  "name": "react-map-gl",
+  "name": "@finn-no/react-map-gl",
   "version": "0.0.0",
   "description": "An ESM version of react-map-gl for NMP",
   "type": "module",
