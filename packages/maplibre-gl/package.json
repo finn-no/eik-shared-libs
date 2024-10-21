@@ -9,7 +9,7 @@
     "eik:login": "eik login",
     "eik:publish": "eik publish",
     "eik:alias": "eik npm-alias",
-    "eik:publish:ci": "../../scripts/publish.js maplibre maplibre-gl"
+    "eik:publish:ci": "../../scripts/publish.js maplibre-gl maplibre-gl"
   },
   "dependencies": {
     "maplibre-gl": "4.7.1"
