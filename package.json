@@ -22,7 +22,8 @@
     "packages/lit-element",
     "packages/lit-html",
     "packages/podium-browser",
-    "packages/lit-labs-ssr-client"
+    "packages/lit-labs-ssr-client",
+    "packages/turf"
   ],
   "devDependencies": {
     "@eik/cli": "3.1.10",
