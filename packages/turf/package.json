@@ -1,0 +1,26 @@
+{
+  "name": "turf",
+  "version": "0.0.0",
+  "description": "An ESM version of Turf-packages for Finn",
+  "type": "module",
+  "scripts": {
+    "copy": "echo 'noop';",
+    "build": "node ./esbuild.js",
+    "eik:login": "eik login",
+    "eik:publish": "eik publish",
+    "eik:alias": "eik npm-alias",
+    "eik:publish:ci": "../../scripts/publish.js turf @turf/turf"
+  },
+  "dependencies": {
+    "@turf/turf": "7.1.0"
+  },
+  "devDependencies": {
+    "esbuild": "0.24.0"
+  },
+  "eik": {
+    "name": "turf",
+    "server": "https://assets.finn.no",
+    "type": "npm",
+    "files": "dist"
+  }
+}
