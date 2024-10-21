@@ -23,7 +23,8 @@
     "packages/lit-html",
     "packages/podium-browser",
     "packages/lit-labs-ssr-client",
-    "packages/turf"
+    "packages/turf",
+    "packages/maplibre-gl"
   ],
   "devDependencies": {
     "@eik/cli": "3.1.10",
