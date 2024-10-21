@@ -1,0 +1,23 @@
+{
+  "name": "react-map-gl",
+  "version": "0.0.0",
+  "description": "An ESM version of react-map-gl for NMP",
+  "type": "module",
+  "scripts": {
+    "copy": "echo 'noop';",
+    "build": "node ./esbuild.js",
+    "eik:login": "eik login",
+    "eik:publish": "eik publish",
+    "eik:alias": "eik npm-alias",
+    "eik:publish:ci": "../../scripts/publish.js react-map-gl react-map-gl"
+  },
+  "dependencies": {
+    "react-map-gl": "7.1.7"
+  },
+  "eik": {
+    "name": "react-map-gl",
+    "server": "https://assets.finn.no",
+    "type": "npm",
+    "files": "dist"
+  }
+}

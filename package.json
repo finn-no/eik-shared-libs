@@ -23,7 +23,8 @@
     "packages/lit-html",
     "packages/podium-browser",
     "packages/lit-labs-ssr-client",
-    "packages/maplibre-gl"
+    "packages/maplibre-gl",
+    "packages/react-map-gl"
   ],
   "devDependencies": {
     "@eik/cli": "3.1.10",
