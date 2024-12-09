@@ -2,17 +2,19 @@ import ReactDOM from "react-dom";
 
 export default ReactDOM;
 export const {
-  __SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED,
+  __DOM_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE,
   createPortal,
-  createRoot,
-  findDOMNode,
   flushSync,
-  hydrate,
-  hydrateRoot,
-  render,
-  unmountComponentAtNode,
-  unstable_renderSubtreeIntoContainer,
+  preconnect,
+  prefetchDNS,
+  preinit,
+  preinitModule,
+  preload,
+  preloadModule,
+  requestFormReset,
   unstable_batchedUpdates,
+  useFormState,
+  useFormStatus,
   version,
 } = ReactDOM;
 // This file exists simply to apply __esModule: true to the module
