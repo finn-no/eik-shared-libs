@@ -9,11 +9,11 @@
     "eik:login": "eik login",
     "eik:publish": "eik publish",
     "eik:alias": "eik npm-alias",
-    "eik:publish:ci": "../../scripts/publish.js react-18 react",
+    "eik:publish:ci": "../../scripts/publish.js react react",
     "postinstall": "npm run build"
   },
   "dependencies": {
-    "react": "18.3.1"
+    "react": "19.0.0"
   },
   "devDependencies": {
     "@eik/rollup-plugin": "4.0.64",

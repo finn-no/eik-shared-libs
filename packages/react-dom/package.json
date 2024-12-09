@@ -12,10 +12,10 @@
     "eik:publish": "eik publish",
     "eik:alias": "eik npm-alias",
     "postinstall": "npm run build",
-    "eik:publish:ci": "../../scripts/publish.js react-dom-18 react-dom"
+    "eik:publish:ci": "../../scripts/publish.js react-dom react-dom"
   },
   "dependencies": {
-    "react-dom": "18.3.1"
+    "react-dom": "19.0.0"
   },
   "devDependencies": {
     "@eik/rollup-plugin": "4.0.64",
