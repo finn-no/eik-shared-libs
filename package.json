@@ -12,8 +12,8 @@
   "workspaces": [
     "packages/bridge",
     "packages/braze",
-    "packages/react-18",
-    "packages/react-dom-18",
+    "packages/react",
+    "packages/react-dom",
     "packages/trackjs",
     "packages/vue-3",
     "packages/lit",

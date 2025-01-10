@@ -13,8 +13,10 @@ const { resolve } = createRequire(import.meta.url);
 const reactPath = resolve("react");
 const reactPackageJSONPath = join(dirname(reactPath), "package.json");
 const reactPackageJSON = JSON.parse(readFileSync(reactPackageJSONPath, { encoding: "utf8" }));
+
 reactPackageJSON.exports["./cjs/react.development.js"] = "./cjs/react.development.js";
-reactPackageJSON.exports["./cjs/react.production.min.js"] = "./cjs/react.production.min.js";
+reactPackageJSON.exports["./cjs/react.production.js"] = "./cjs/react.production.js";
+
 writeFileSync(reactPackageJSONPath, JSON.stringify(reactPackageJSON, null, 2));
 
 const browserslistrc = new URL("../../.browserslistrc", import.meta.url);

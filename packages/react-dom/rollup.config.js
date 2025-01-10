@@ -9,7 +9,7 @@ import swc from "@rollup/plugin-swc";
 
 const env = process.env.NODE_ENV;
 
-const reactPkg = new URL("../react-18/package.json", import.meta.url);
+const reactPkg = new URL("../react/package.json", import.meta.url);
 const reactDomPkg = new URL("./package.json", import.meta.url);
 
 const {
@@ -56,16 +56,6 @@ export default [
   {
     input: "./react-dom.client.js",
     output: { format: "esm", sourcemap: true, file: `./dist/react-dom.client.${env}.js` },
-    plugins,
-  },
-  {
-    input: "./react-dom.server.browser.js",
-    output: { format: "esm", sourcemap: true, file: `./dist/react-dom.server.browser.${env}.js` },
-    plugins,
-  },
-  {
-    input: "./react-dom.server.node.js",
-    output: { format: "esm", sourcemap: true, file: `./dist/react-dom.server.node.${env}.js` },
     plugins,
   },
 ];
