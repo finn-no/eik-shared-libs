@@ -12,7 +12,7 @@
     "eik:publish:ci": "../../scripts/publish.js react-map-gl react-map-gl"
   },
   "dependencies": {
-    "react-map-gl": "7.1.8"
+    "react-map-gl": "7.1.9"
   },
   "eik": {
     "name": "react-map-gl",
