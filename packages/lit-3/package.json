@@ -15,7 +15,7 @@
     "lit": "3.2.1"
   },
   "devDependencies": {
-    "esbuild": "0.24.2",
+    "esbuild": "0.25.0",
     "@eik/esbuild-plugin": "1.1.49"
   },
   "eik": {
