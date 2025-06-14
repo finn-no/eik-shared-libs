@@ -28,7 +28,7 @@
     "packages/maplibre-gl"
   ],
   "devDependencies": {
-    "@eik/cli": "3.1.16",
+    "@eik/cli": "3.1.18",
     "@eik/esbuild-plugin": "1.1.54",
     "browserslist": "4.25.0",
     "browserslist-to-esbuild": "2.1.1",
