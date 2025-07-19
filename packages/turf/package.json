@@ -15,7 +15,7 @@
     "@turf/turf": "7.2.0"
   },
   "devDependencies": {
-    "esbuild": "0.25.7"
+    "esbuild": "0.25.8"
   },
   "eik": {
     "name": "turf",
