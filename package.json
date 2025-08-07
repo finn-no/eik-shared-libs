@@ -25,7 +25,8 @@
     "packages/lit-labs-ssr-client",
     "packages/react-map-gl",
     "packages/turf",
-    "packages/maplibre-gl"
+    "packages/maplibre-gl",
+    "packages/workbox-window"
   ],
   "devDependencies": {
     "@eik/cli": "3.1.21",
