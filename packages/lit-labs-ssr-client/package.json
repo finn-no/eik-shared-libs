@@ -12,10 +12,10 @@
     "eik:publish:ci": "../../scripts/publish.js lit-labs-ssr-client @lit-labs/ssr-client"
   },
   "dependencies": {
-    "@eik/esbuild-plugin": "2.0.4",
     "@lit-labs/ssr-client": "1.1.7"
   },
   "devDependencies": {
+    "@eik/esbuild-plugin": "2.0.4",
     "esbuild": "0.24.2"
   },
   "eik": {
