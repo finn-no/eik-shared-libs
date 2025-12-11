@@ -13,7 +13,7 @@
     "postinstall": "npm run build"
   },
   "dependencies": {
-    "react": "19.2.1"
+    "react": "19.2.2"
   },
   "devDependencies": {
     "@eik/rollup-plugin": "5.0.13",
