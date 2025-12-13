@@ -18,7 +18,7 @@
     "react-dom": "19.2.3"
   },
   "devDependencies": {
-    "@eik/rollup-plugin": "5.0.13",
+    "@eik/rollup-plugin": "5.0.14",
     "@rollup/plugin-commonjs": "26.0.3",
     "@rollup/plugin-node-resolve": "15.3.1",
     "@rollup/plugin-replace": "6.0.3",
