@@ -12,7 +12,7 @@
     "eik:publish:ci": "../../scripts/publish.js turf @turf/turf"
   },
   "dependencies": {
-    "@turf/turf": "7.3.1"
+    "@turf/turf": "7.3.2"
   },
   "devDependencies": {
     "esbuild": "0.27.2"
