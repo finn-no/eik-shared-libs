@@ -34,6 +34,6 @@
     "browserslist": "4.28.1",
     "browserslist-to-esbuild": "2.1.1",
     "esbuild": "0.27.3",
-    "semver": "7.7.3"
+    "semver": "7.7.4"
   }
 }
