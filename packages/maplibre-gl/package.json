@@ -12,7 +12,7 @@
     "eik:publish:ci": "../../scripts/publish.js maplibre-gl maplibre-gl"
   },
   "dependencies": {
-    "maplibre-gl": "4.7.1"
+    "maplibre-gl": "5.17.0"
   },
   "eik": {
     "name": "maplibre-gl",
