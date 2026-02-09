@@ -7,8 +7,8 @@ const { resolve } = createRequire(import.meta.url);
 await eik.load();
 
 await build({
-  entryPoints: [resolve("react-map-gl")],
+  entryPoints: [resolve("react-map-gl/maplibre")],
   outfile: "./dist/index.js",
-  external: ["mapbox-gl"],
+  external: ["maplibre-gl"],
   plugins: [eik.plugin()],
 });
