@@ -20,7 +20,7 @@
   "devDependencies": {
     "@eik/rollup-plugin": "5.0.22",
     "@rollup/plugin-commonjs": "26.0.3",
-    "@rollup/plugin-node-resolve": "15.3.1",
+    "@rollup/plugin-node-resolve": "16.0.3",
     "@rollup/plugin-replace": "6.0.3",
     "@rollup/plugin-swc": "0.4.0",
     "@rollup/plugin-terser": "0.4.4",
