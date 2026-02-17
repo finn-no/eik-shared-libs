@@ -12,7 +12,7 @@
     "eik:publish:ci": "../../scripts/publish.js braze @braze/web-sdk"
   },
   "dependencies": {
-    "@braze/web-sdk": "5.9.1"
+    "@braze/web-sdk": "6.5.0"
   },
   "eik": {
     "name": "@braze/web-sdk",
