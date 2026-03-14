@@ -33,7 +33,7 @@
     "@eik/esbuild-plugin": "2.0.12",
     "browserslist": "4.28.1",
     "browserslist-to-esbuild": "2.1.1",
-    "esbuild": "0.27.3",
+    "esbuild": "0.27.4",
     "semver": "7.7.4"
   }
 }
