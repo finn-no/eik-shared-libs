@@ -30,7 +30,7 @@
   ],
   "devDependencies": {
     "@eik/cli": "3.1.45",
-    "@eik/esbuild-plugin": "2.0.13",
+    "@eik/esbuild-plugin": "2.0.14",
     "browserslist": "4.28.2",
     "browserslist-to-esbuild": "2.1.1",
     "esbuild": "0.28.0",
