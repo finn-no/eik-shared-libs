@@ -3,6 +3,7 @@ import React from "react/cjs/react.production.js";
 export default React;
 export const __esmModule = true;
 export const {
+  Activity,
   Fragment,
   StrictMode,
   Profiler,
@@ -13,6 +14,8 @@ export const {
   __CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE,
   act,
   cache,
+  cacheSignal,
+  captureOwnerStack,
   cloneElement,
   createContext,
   createElement,
@@ -30,6 +33,7 @@ export const {
   useDebugValue,
   useDeferredValue,
   useEffect,
+  useEffectEvent,
   useId,
   useImperativeHandle,
   useInsertionEffect,
