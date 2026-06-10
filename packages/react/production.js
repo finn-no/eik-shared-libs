@@ -15,6 +15,7 @@ export const {
   act,
   cache,
   cacheSignal,
+  captureOwnerStack,
   cloneElement,
   createContext,
   createElement,
