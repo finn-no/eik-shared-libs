@@ -31,6 +31,7 @@ export const {
   useDebugValue,
   useDeferredValue,
   useEffect,
+  useEffectEvent,
   useId,
   useImperativeHandle,
   useInsertionEffect,
