@@ -15,7 +15,7 @@
     "workbox-window": "7.3.0"
   },
   "devDependencies": {
-    "esbuild": "0.28.0"
+    "esbuild": "0.28.1"
   },
   "eik": {
     "name": "workbox-window",
