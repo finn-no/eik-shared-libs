@@ -29,7 +29,7 @@
     "packages/workbox-window"
   ],
   "devDependencies": {
-    "@eik/cli": "3.1.65",
+    "@eik/cli": "3.1.67",
     "@eik/esbuild-plugin": "2.0.19",
     "browserslist": "4.28.7",
     "browserslist-to-esbuild": "2.1.1",
