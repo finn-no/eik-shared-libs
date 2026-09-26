@@ -23,7 +23,7 @@
     "@rollup/plugin-swc": "0.4.1",
     "@rollup/plugin-terser": "0.4.4",
     "browserslist": "4.29.1",
-    "rollup": "4.63.4"
+    "rollup": "4.63.5"
   },
   "eik": {
     "name": "react",
